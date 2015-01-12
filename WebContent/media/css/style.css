@@ -127,6 +127,7 @@ body>header>div nav#menu {
 	-o-user-select: none;
 	user-select: none
 }
+
 body>header>div nav#menu2 {
 	position: absolute;
 	float: left;
@@ -140,6 +141,7 @@ body>header>div nav#menu2 {
 	-o-user-select: none;
 	user-select: none
 }
+
 body>header>div nav#menu2 ul li {
 	height: 35px;
 	margin-left: 16px;
@@ -151,18 +153,16 @@ body>header>div nav#menu2 ul li>a {
 	display: block;
 	float: left;
 	padding: 8px 0 0;
-	height: 27px; 
+	height: 27px;
 	font-family: Helvetica, "Segoe UI", Tahoma, sans-serif;
 	font-size: large;
-	color: rgba(100, 100, 100, 0.9); 
-	text-decoration : none;
+	color: rgba(100, 100, 100, 0.9);
+	text-decoration: none;
 	text-shadow: -1px 0 rgba(144, 144, 144, 0.3), 0 1px
 		rgba(144, 144, 144, 0.3), 1px 0 rgba(144, 144, 144, 0.3), 0 -1px
 		rgba(144, 144, 144, 0.3);
 	text-decoration: none;
 }
-
-
 
 body>header>div nav#menu span.toggler {
 	display: none
@@ -182,7 +182,7 @@ body>header>div nav#menu ul li>a {
 	height: 27px;
 	background-repeat: no-repeat;
 	font-family: Helvetica, "Segoe UI", Tahoma, sans-serif;
- 	background-image: url(../img/menu.png) 
+	background-image: url(../img/menu.png)
 }
 
 body>header>div nav#menu2 ul li>a span {
@@ -228,7 +228,8 @@ body>header>div nav#lang2 ul li>a {
 	height: 22px;
 	font-size: medium;
 	font-family: Helvetica, "Segoe UI", Tahoma, sans-serif;
-	color: rgba(100, 100, 100, 0.9); text-decoration : none;
+	color: rgba(100, 100, 100, 0.9);
+	text-decoration: none;
 	text-shadow: -1px 0 rgba(144, 144, 144, 0.3), 0 1px
 		rgba(144, 144, 144, 0.3), 1px 0 rgba(144, 144, 144, 0.3), 0 -1px
 		rgba(144, 144, 144, 0.3);
@@ -401,7 +402,7 @@ body.it>header>div nav#lang ul li.it a span,body.en>header>div nav#lang ul li.en
 }
 
 body.it>header>div nav#lang2 ul li.it2 a span,body.en>header>div nav#lang2 ul li.en2 a span,body.de>header>div nav#lang2 ul li.de2 a span,body.fr>header>div nav#lang2 ul li.fr2 a span,body.es>header>div nav#lang2 ul li.es2 a span
-{
+	{
 	border-bottom-color: #888;
 	border-bottom-color: rgba(150, 150, 150, 0.6)
 }
@@ -1749,7 +1750,7 @@ body#pageGallery article>section>figure>img {
 		-moz-background-size: 290px 65px;
 		background-size: 290px 65px
 	}
-	body>header>div nav#menu {
+	body>header>div nav#menu2 {
 		position: relative;
 		bottom: auto;
 		right: auto;
@@ -1763,7 +1764,7 @@ body#pageGallery article>section>figure>img {
 		-o-user-select: none;
 		user-select: none
 	}
-	body>header>div nav#menu:after {
+	body>header>div nav#menu2:after {
 		visibility: hidden;
 		display: block;
 		font-size: 0;
@@ -1771,7 +1772,7 @@ body#pageGallery article>section>figure>img {
 		clear: both;
 		height: 0
 	}
-	body>header>div nav#menu span.toggler {
+	body>header>div nav#menu2 span.toggler {
 		display: block;
 		width: auto;
 		height: 40px;
@@ -1784,20 +1785,20 @@ body#pageGallery article>section>figure>img {
 		-moz-background-size: 87px 80px;
 		background-size: 87px 80px
 	}
-	body>header>div nav#menu ul {
+	body>header>div nav#menu2 ul {
 		overflow: hidden;
 		-webkit-transition: height .5s ease-out;
 		-moz-transition: height .5s ease-out;
 		transition: height .5s ease-out
 	}
-	body>header>div nav#menu ul li {
+	body>header>div nav#menu2 ul li {
 		height: 40px;
 		margin: 0;
 		padding: 0;
 		border-bottom: 1px solid #d4d4d4;
 		border-left: 1px solid #d4d4d4
 	}
-	body>header>div nav#menu ul li>a {
+	body>header>div nav#menu2 ul li>a {
 		display: block;
 		float: none;
 		width: auto !important;
@@ -1808,22 +1809,22 @@ body#pageGallery article>section>figure>img {
 		-moz-background-size: 1219px 185px;
 		background-size: 1219px 185px
 	}
-	body>header>div nav#menu ul li>a>span {
+	body>header>div nav#menu2 ul li>a>span {
 		display: none
 	}
-	body>header>div nav#menu.collapsed span.toggler {
+	body>header>div nav#menu2.collapsed span.toggler {
 		background-color: #e4e4e4;
 		background-position: right top;
 		opacity: .6
 	}
-	body>header>div nav#menu.collapsed ul {
+	body>header>div nav#menu2.collapsed ul {
 		height: 0
 	}
-	body>header>div nav#lang {
+	body>header>div nav#lang2 {
 		top: 15px;
 		right: 10px
 	}
-	body>header>div nav#lang ul li>a {
+	body>header>div nav#lang2 ul li>a {
 		background-image: url(../img/language@2.png)
 	}
 	body>header>em.backimage {
