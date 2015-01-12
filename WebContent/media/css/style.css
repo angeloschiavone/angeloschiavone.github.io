@@ -117,19 +117,6 @@ body>header>div>a {
 
 body>header>div nav#menu {
 	position: absolute;
-	bottom: 25px;
-	right: 2px;
-	width: auto;
-	height: 35px;
-	-webkit-user-select: none;
-	-khtml-user-select: none;
-	-moz-user-select: none;
-	-o-user-select: none;
-	user-select: none
-}
-
-body>header>div nav#menu2 {
-	position: absolute;
 	float: left;
 	bottom: 25px;
 	right: 2px;
@@ -142,14 +129,14 @@ body>header>div nav#menu2 {
 	user-select: none
 }
 
-body>header>div nav#menu2 ul li {
+body>header>div nav#menu ul li {
 	height: 35px;
 	margin-left: 16px;
 	display: block;
 	float: left
 }
 
-body>header>div nav#menu2 ul li>a {
+body>header>div nav#menu ul li>a {
 	display: block;
 	float: left;
 	padding: 8px 0 0;
@@ -168,24 +155,7 @@ body>header>div nav#menu span.toggler {
 	display: none
 }
 
-body>header>div nav#menu ul li {
-	height: 35px;
-	margin-left: 16px;
-	display: block;
-	float: left
-}
-
-body>header>div nav#menu ul li>a {
-	display: block;
-	float: left;
-	padding: 8px 0 0;
-	height: 27px;
-	background-repeat: no-repeat;
-	font-family: Helvetica, "Segoe UI", Tahoma, sans-serif;
-	background-image: url(../img/menu.png)
-}
-
-body>header>div nav#menu2 ul li>a span {
+body>header>div nav#menu ul li>a span {
 	width: auto;
 	height: 20px;
 	margin: 0 1px;
@@ -197,7 +167,7 @@ body>header>div nav#menu2 ul li>a span {
 	transition: border-bottom-color .3s linear;
 }
 
-body>header>div nav#menu2 ul li>a:hover span {
+body>header>div nav#menu ul li>a:hover span {
 	border-bottom-color: #888 !important
 }
 
@@ -407,125 +377,6 @@ body.it>header>div nav#lang2 ul li.it2 a span,body.en>header>div nav#lang2 ul li
 	border-bottom-color: rgba(150, 150, 150, 0.6)
 }
 
-body.it>header>div nav#menu ul li.casa a {
-	width: 67px;
-	background-position: -20px -20px
-}
-
-body.it>header>div nav#menu ul li.camere a {
-	width: 92px;
-	background-position: -180px -20px
-}
-
-body.it>header>div nav#menu ul li.servizi a {
-	width: 73px;
-	background-position: -340px -20px
-}
-
-body.it>header>div nav#menu ul li.prezzi a {
-	width: 58px;
-	background-position: -500px -20px
-}
-
-body.it>header>div nav#menu ul li.prenotazioni a {
-	width: 117px;
-	background-position: -660px -20px
-}
-
-body.it>header>div nav#menu ul li.contatti a {
-	width: 75px;
-	background-position: -820px -20px
-}
-
-body.en>header>div nav#menu ul li.casa a {
-	width: 57px;
-	background-position: -20px -60px
-}
-
-body.en>header>div nav#menu ul li.camere a {
-	width: 61px;
-	background-position: -180px -60px
-}
-
-body.en>header>div nav#menu ul li.servizi a {
-	width: 77px;
-	background-position: -340px -60px
-}
-
-body.en>header>div nav#menu ul li.prezzi a {
-	width: 51px;
-	background-position: -500px -60px
-}
-
-body.en>header>div nav#menu ul li.prenotazioni a {
-	width: 75px;
-	background-position: -660px -60px
-}
-
-body.en>header>div nav#menu ul li.contatti a {
-	width: 71px;
-	background-position: -820px -60px
-}
-
-body.de>header>div nav#menu ul li.casa a {
-	width: 90px;
-	background-position: -20px -100px
-}
-
-body.de>header>div nav#menu ul li.camere a {
-	width: 105px;
-	background-position: -180px -100px
-}
-
-body.de>header>div nav#menu ul li.servizi a {
-	width: 67px;
-	background-position: -340px -100px
-}
-
-body.de>header>div nav#menu ul li.prezzi a {
-	width: 59px;
-	background-position: -500px -100px
-}
-
-body.de>header>div nav#menu ul li.prenotazioni a {
-	width: 141px;
-	background-position: -660px -100px
-}
-
-body.de>header>div nav#menu ul li.contatti a {
-	width: 83px;
-	background-position: -820px -100px
-}
-
-body.fr>header>div nav#menu ul li.casa a {
-	width: 92px;
-	background-position: -20px -140px
-}
-
-body.fr>header>div nav#menu ul li.camere a {
-	width: 124px;
-	background-position: -180px -140px
-}
-
-body.fr>header>div nav#menu ul li.servizi a {
-	width: 108px;
-	background-position: -340px -140px
-}
-
-body.fr>header>div nav#menu ul li.prezzi a {
-	width: 38px;
-	background-position: -500px -140px
-}
-
-body.fr>header>div nav#menu ul li.prenotazioni a {
-	width: 116px;
-	background-position: -660px -140px
-}
-
-body.fr>header>div nav#menu ul li.contatti a {
-	width: 82px;
-	background-position: -820px -140px
-}
 
 body>header>div nav#menu.casa ul li.casa a span,body>header>div nav#menu.camere ul li.camere a span,body>header>div nav#menu.servizi ul li.servizi a span,body>header>div nav#menu.prezzi ul li.prezzi a span,body>header>div nav#menu.prenotazioni ul li.prenotazioni a span,body>header>div nav#menu.contatti ul li.contatti a span
 	{
@@ -1733,7 +1584,7 @@ body#pageGallery article>section>figure>img {
 	(max-device-width:480px) {
 	body>header {
 		position: relative;
-		height: auto
+		height: auto;
 	}
 	body>header>div {
 		width: auto;
@@ -1750,11 +1601,11 @@ body#pageGallery article>section>figure>img {
 		-moz-background-size: 290px 65px;
 		background-size: 290px 65px
 	}
-	body>header>div nav#menu2 {
+	body>header>div nav#menu {
 		position: relative;
 		bottom: auto;
 		right: auto;
-		width: auto;
+		width: 100%;
 		height: auto;
 		background: #000;
 		background: #e4e4e4;
@@ -1764,7 +1615,7 @@ body#pageGallery article>section>figure>img {
 		-o-user-select: none;
 		user-select: none
 	}
-	body>header>div nav#menu2:after {
+	body>header>div nav#menu:after {
 		visibility: hidden;
 		display: block;
 		font-size: 0;
@@ -1772,9 +1623,9 @@ body#pageGallery article>section>figure>img {
 		clear: both;
 		height: 0
 	}
-	body>header>div nav#menu2 span.toggler {
+	body>header>div nav#menu span.toggler {
 		display: block;
-		width: auto;
+		width: 100%;
 		height: 40px;
 		background: #000 url(../img/menu_toggle@2.png) no-repeat right bottom;
 		opacity: 1;
@@ -1785,48 +1636,50 @@ body#pageGallery article>section>figure>img {
 		-moz-background-size: 87px 80px;
 		background-size: 87px 80px
 	}
-	body>header>div nav#menu2 ul {
+	body>header>div nav#menu ul {
 		overflow: hidden;
 		-webkit-transition: height .5s ease-out;
 		-moz-transition: height .5s ease-out;
 		transition: height .5s ease-out
 	}
-	body>header>div nav#menu2 ul li {
+	body>header>div nav#menu ul li {
 		height: 40px;
 		margin: 0;
 		padding: 0;
 		border-bottom: 1px solid #d4d4d4;
 		border-left: 1px solid #d4d4d4
 	}
-	body>header>div nav#menu2 ul li>a {
+	body>header>div nav#menu ul li>a {
 		display: block;
 		float: none;
 		width: auto !important;
 		height: 40px;
-		padding: 0; *
-		background-image: url(../img/menu_alt@2.png);
-		-webkit-background-size: 1219px 185px;
-		-moz-background-size: 1219px 185px;
-		background-size: 1219px 185px
+		padding: 0;
+		/*background-image: url(../img/menu_alt@2.png);*/
+
 	}
-	body>header>div nav#menu2 ul li>a>span {
-		display: none
+	body>header>div nav#menu ul li>a>span {
+		/*display: none*/
+		position:relative;
+		vertical-align:middle;
+		top:10px;
+		left: 10px;
 	}
-	body>header>div nav#menu2.collapsed span.toggler {
+	body>header>div nav#menu.collapsed span.toggler {
 		background-color: #e4e4e4;
 		background-position: right top;
 		opacity: .6
 	}
-	body>header>div nav#menu2.collapsed ul {
+	body>header>div nav#menu.collapsed ul {
 		height: 0
 	}
 	body>header>div nav#lang2 {
 		top: 15px;
 		right: 10px
 	}
-	body>header>div nav#lang2 ul li>a {
-		background-image: url(../img/language@2.png)
-	}
+/* 	body>header>div nav#lang2 ul li>a { */
+/* 		background-image: url(../img/language@2.png) */
+/* 	} */
 	body>header>em.backimage {
 		width: 100%;
 		height: 100px;
