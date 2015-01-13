@@ -309,7 +309,7 @@ body#pageCasa>header>em.backimage {
 }
 
 body#pageCamere>header>em.backimage {
-	background-image: url(../img/photos/headers/header_esterno.jpg)
+	background-image: url(../img/photos/headers/header_pavimento.jpg)
 }
 
 body#pageServizi>header>em.backimage {
@@ -317,7 +317,7 @@ body#pageServizi>header>em.backimage {
 }
 
 body#pagePrezzi>header>em.backimage {
-	background-image: url(../img/photos/headers/lanterna.jpg)
+	background-image: url(../img/photos/headers/header_pianoforte.jpg)
 }
 
 body#pagePrenotazioni>header>em.backimage {
@@ -329,7 +329,7 @@ body#pageRegolamento>header>em.backimage {
 }
 
 body#pageContatti>header>em.backimage {
-	background-image: url(../img/photos/headers/giardino1.jpg)
+	background-image: url(../img/photos/headers/header_esterno.jpg)
 }
 
 body#pageCredits>header>em.backimage {

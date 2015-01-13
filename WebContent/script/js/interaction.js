@@ -61,7 +61,10 @@ window.addEvent('domready', function() {
 		var mapOptions = {
 			zoom: 15,
 			// center: new google.maps.LatLng(45.442363, 10.980915),
-			center: new google.maps.LatLng(45.441249, 10.987653),
+			//center: new google.maps.LatLng(45.441249, 10.987653),
+			center: new google.maps.LatLng(45.5141936, 9.1710628),
+			
+			
 			disableDefaultUI: false,
 			scrollwheel: false,
 			mapTypeId: google.maps.MapTypeId.ROADMAP
@@ -71,16 +74,17 @@ window.addEvent('domready', function() {
 		var map = new google.maps.Map(document.getElement("#gmap"),mapOptions);
 		
 		// add the marker
-		var latlng = new google.maps.LatLng(parseFloat(45.442363),parseFloat(10.980915));
+		//var latlng = new google.maps.LatLng(parseFloat(45.442363),parseFloat(10.980915));
+		var latlng = new google.maps.LatLng(parseFloat(45.5141936),parseFloat(9.1710628));
 		var marker = new google.maps.Marker({
 			position: latlng,
 			map: map,
-			title: 'Il Relais dell\'Abbazia',
-			icon: '/media/img/icons/gmap_marker.png'
+			title: 'Bed & Breakfast Da Canal',
+			icon: '../media/img/icons/gmap_marker.png'
 		});
 		
 		google.maps.event.addListener(marker, 'click', function() {
-			window.location.href = 'http://maps.google.com/maps?f=q&q=Vicolo+dietro+Caserma+Chiodo,+18,+Verona,+VR+37123+ITALIA&ie=UTF8&om=1';
+			window.location.href = 'https://www.google.it/maps/place/Via+Privata+Bernardo+da+Canal,+24,+20161+Milano/@45.5141936,9.1710628,17z/data=!4m2!3m1!1s0x4786c0eb7f4ac60d:0x48789106df250089';
 		});
 
 	}
