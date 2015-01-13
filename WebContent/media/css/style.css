@@ -1582,6 +1582,11 @@ body#pageGallery article>section>figure>img {
 
 @media only screen and (min-device-width:320px) and
 	(max-device-width:480px) {
+	
+		/*language menu bianco nella home su mobile perchè sfondo è nero*/
+	body#pageHomepage>header>div nav#lang2 ul li>a {
+	color: rgba(250, 250, 250, 0.9);
+}
 	body>header {
 		position: relative;
 		height: auto;
@@ -2154,11 +2159,6 @@ body#pageGallery article>section>figure>img {
 		width: 125px;
 		height: auto
 	}
-	
-	
-	body#pageHomepage>header>div nav#lang2 ul li>a {
-	color: rgba(250, 250, 250, 0.9);
-}
 	
 }
 
