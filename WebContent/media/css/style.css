@@ -377,7 +377,6 @@ body.it>header>div nav#lang2 ul li.it2 a span,body.en>header>div nav#lang2 ul li
 	border-bottom-color: rgba(150, 150, 150, 0.6)
 }
 
-
 body>header>div nav#menu.casa ul li.casa a span,body>header>div nav#menu.camere ul li.camere a span,body>header>div nav#menu.servizi ul li.servizi a span,body>header>div nav#menu.prezzi ul li.prezzi a span,body>header>div nav#menu.prenotazioni ul li.prenotazioni a span,body>header>div nav#menu.contatti ul li.contatti a span
 	{
 	border-bottom-color: #fff;
@@ -1582,11 +1581,6 @@ body#pageGallery article>section>figure>img {
 
 @media only screen and (min-device-width:320px) and
 	(max-device-width:480px) {
-	
-		/*language menu bianco nella home su mobile perchè sfondo è nero*/
-	body#pageHomepage>header>div nav#lang2 ul li>a {
-	color: rgba(250, 250, 250, 0.9);
-}
 	body>header {
 		position: relative;
 		height: auto;
@@ -1601,10 +1595,19 @@ body#pageGallery article>section>figure>img {
 		left: 15px;
 		width: 290px;
 		height: 65px;
-		background-image: url(../img/logo_orizzontale@2.png);
+		background-image: url(../img/tmp/luna4.png);
+		/*background-image: url(../img/logo_orizzontale@2.png);*/
 		-webkit-background-size: 290px 65px;
 		-moz-background-size: 290px 65px;
 		background-size: 290px 65px
+	}
+
+	/*language menu bianco nella home su mobile perchè sfondo è nero*/
+	body#pageHomepage>header>div nav#lang2 ul li>a {
+		color: rgba(250, 250, 250, 0.9);
+	}
+	body#pageHomepage>header>div>a {
+		background-image: url(../img/tmp/luna4_white.png);
 	}
 	body>header>div nav#menu {
 		position: relative;
@@ -1628,17 +1631,16 @@ body#pageGallery article>section>figure>img {
 		clear: both;
 		height: 0
 	}
-	
 	body>header>div nav#menu span.togglerText {
-			display: inline-block;
-			position: relative;
-		   vertical-align: middle;
-		   top: 10px;
-		   right: 10px;
-		   color: white;
-		   	text-shadow: -1px 0 rgba(200, 200, 200, 0.5), 0 1px
-		rgba(200, 200, 200, 0.5), 1px 0 rgba(200, 200, 200, 0.5), 0 -1px
-		rgba(200, 200, 200, 0.5); 
+		display: inline-block;
+		position: relative;
+		vertical-align: middle;
+		top: 10px;
+		right: 10px;
+		color: white;
+		text-shadow: -1px 0 rgba(200, 200, 200, 0.5), 0 1px
+			rgba(200, 200, 200, 0.5), 1px 0 rgba(200, 200, 200, 0.5), 0 -1px
+			rgba(200, 200, 200, 0.5);
 	}
 	body>header>div nav#menu span.toggler {
 		display: block;
@@ -1674,13 +1676,12 @@ body#pageGallery article>section>figure>img {
 		height: 40px;
 		padding: 0;
 		/*background-image: url(../img/menu_alt@2.png);*/
-
 	}
 	body>header>div nav#menu ul li>a>span {
 		/*display: none*/
-		position:relative;
-		vertical-align:middle;
-		top:10px;
+		position: relative;
+		vertical-align: middle;
+		top: 10px;
 		left: 10px;
 	}
 	body>header>div nav#menu.collapsed span.toggler {
@@ -1698,9 +1699,9 @@ body#pageGallery article>section>figure>img {
 		top: 15px;
 		right: 10px
 	}
-/* 	body>header>div nav#lang2 ul li>a { */
-/* 		background-image: url(../img/language@2.png) */
-/* 	} */
+	/* 	body>header>div nav#lang2 ul li>a { */
+	/* 		background-image: url(../img/language@2.png) */
+	/* 	} */
 	body>header>em.backimage {
 		width: 100%;
 		height: 100px;
@@ -1790,7 +1791,8 @@ body#pageGallery article>section>figure>img {
 		right: auto
 	}
 	body#pageHomepage {
-		background: url(../img/photos/homepage/iphone4_portrait.jpg) no-repeat 50% 50%;
+		background: url(../img/photos/homepage/iphone4_portrait.jpg) no-repeat
+			50% 50%;
 		background-attachment: fixed;
 		-webkit-background-size: 320px 480px;
 		-moz-background-size: 320px 480px;
@@ -2159,7 +2161,6 @@ body#pageGallery article>section>figure>img {
 		width: 125px;
 		height: auto
 	}
-	
 }
 
 @media only screen and (min-device-width:320px) and
@@ -2455,15 +2456,16 @@ body#pageGallery article>section>figure>img {
 	}
 }
 /*iphone5 protrait */
-@media screen and (device-aspect-ratio: 40/71) and (orientation:portrait) 
-{
-		body#pageHomepage {
-		background: url(../img/photos/homepage/iphone5_portrait.jpg) no-repeat 50% 50%;
+@media screen and (device-aspect-ratio: 40/71) and
+	(orientation:portrait) {
+	body#pageHomepage {
+		background: url(../img/photos/homepage/iphone5_portrait.jpg) no-repeat
+			50% 50%;
 		-webkit-background-size: 320px 568px;
 		-moz-background-size: 320px 568px;
 		background-size: 320px 568px
 	}
-		body#pageHomepage>header>div nav#lang2 ul li>a {
-	color: rgba(250, 250, 250, 0.9);
-}
+	body#pageHomepage>header>div nav#lang2 ul li>a {
+		color: rgba(250, 250, 250, 0.9);
 	}
+}
