@@ -143,11 +143,11 @@ body>header>div nav#menu ul li>a {
 	height: 27px;
 	font-family: Helvetica, "Segoe UI", Tahoma, sans-serif;
 	font-size: large;
-	color: rgba(100, 100, 100, 0.9);
+	color: rgba(50, 50, 50, 0.9);
 	text-decoration: none;
-	text-shadow: -1px 0 rgba(144, 144, 144, 0.3), 0 1px
-		rgba(144, 144, 144, 0.3), 1px 0 rgba(144, 144, 144, 0.3), 0 -1px
-		rgba(144, 144, 144, 0.3);
+	text-shadow: -1px 0 rgba(200, 200, 200, 0.5), 0 1px
+		rgba(200, 200, 200, 0.5), 1px 0 rgba(200, 200, 200, 0.5), 0 -1px
+		rgba(200, 200, 200, 0.5);
 	text-decoration: none;
 }
 
@@ -168,7 +168,7 @@ body>header>div nav#menu ul li>a span {
 }
 
 body>header>div nav#menu ul li>a:hover span {
-	border-bottom-color: #888 !important
+	border-bottom-color: rgba(50, 50, 50, 0.9) !important
 }
 
 body>header>div nav#lang {
@@ -198,11 +198,11 @@ body>header>div nav#lang2 ul li>a {
 	height: 22px;
 	font-size: medium;
 	font-family: Helvetica, "Segoe UI", Tahoma, sans-serif;
-	color: rgba(100, 100, 100, 0.9);
+	color: rgba(50, 50, 50, 0.9);
 	text-decoration: none;
-	text-shadow: -1px 0 rgba(144, 144, 144, 0.3), 0 1px
-		rgba(144, 144, 144, 0.3), 1px 0 rgba(144, 144, 144, 0.3), 0 -1px
-		rgba(144, 144, 144, 0.3);
+	text-shadow: -1px 0 rgba(200, 200, 200, 0.5), 0 1px
+		rgba(200, 200, 200, 0.5), 1px 0 rgba(200, 200, 200, 0.5), 0 -1px
+		rgba(200, 200, 200, 0.5);
 	text-decoration: none;
 }
 
@@ -223,7 +223,7 @@ body>header>div nav#lang2 ul li>a span {
 }
 
 body>header>div nav#lang2 ul li>a:hover span {
-	border-bottom-color: #888 !important
+	border-bottom-color: rgba(50, 50, 50, 0.9) !important
 }
 
 body>header>div nav#lang ul li {
@@ -305,15 +305,15 @@ body>header.darken>em.blackfade {
 }
 
 body#pageCasa>header>em.backimage {
-	background-image: url(../img/photos/headers/tappeto.jpg)
+	background-image: url(../img/photos/headers/header_luci.jpg)
 }
 
 body#pageCamere>header>em.backimage {
-	background-image: url(../img/photos/headers/poltroncina.jpg)
+	background-image: url(../img/photos/headers/header_esterno.jpg)
 }
 
 body#pageServizi>header>em.backimage {
-	background-image: url(../img/photos/headers/soffitto2.jpg)
+	background-image: url(../img/photos/headers/header_giardino.jpg)
 }
 
 body#pagePrezzi>header>em.backimage {
@@ -367,13 +367,13 @@ body>header>div nav#lang ul li.es a {
 
 body.it>header>div nav#lang ul li.it a span,body.en>header>div nav#lang ul li.en a span,body.de>header>div nav#lang ul li.de a span,body.fr>header>div nav#lang ul li.fr a span
 	{
-	border-bottom-color: #888;
+	border-bottom-color: rgba(50, 50, 50, 0.9);
 	border-bottom-color: rgba(255, 255, 255, 0.6)
 }
 
 body.it>header>div nav#lang2 ul li.it2 a span,body.en>header>div nav#lang2 ul li.en2 a span,body.de>header>div nav#lang2 ul li.de2 a span,body.fr>header>div nav#lang2 ul li.fr2 a span,body.es>header>div nav#lang2 ul li.es2 a span
 	{
-	border-bottom-color: #888;
+	border-bottom-color: rgba(50, 50, 50, 0.9);
 	border-bottom-color: rgba(150, 150, 150, 0.6)
 }
 
@@ -1623,11 +1623,24 @@ body#pageGallery article>section>figure>img {
 		clear: both;
 		height: 0
 	}
+	
+	body>header>div nav#menu span.togglerText {
+			display: inline-block;
+			position: relative;
+		   vertical-align: middle;
+		   top: 10px;
+		   right: 10px;
+		   color: white;
+		   	text-shadow: -1px 0 rgba(200, 200, 200, 0.5), 0 1px
+		rgba(200, 200, 200, 0.5), 1px 0 rgba(200, 200, 200, 0.5), 0 -1px
+		rgba(200, 200, 200, 0.5); 
+	}
 	body>header>div nav#menu span.toggler {
 		display: block;
 		width: 100%;
 		height: 40px;
-		background: #000 url(../img/menu_toggle@2.png) no-repeat right bottom;
+		text-align: right;
+		background: #000;
 		opacity: 1;
 		-webkit-transition: background-color .5s ease-out, opacity .5s ease-out;
 		-moz-transition: background-color .5s ease-out, opacity .5s ease-out;
@@ -1669,6 +1682,9 @@ body#pageGallery article>section>figure>img {
 		background-color: #e4e4e4;
 		background-position: right top;
 		opacity: .6
+	}
+	body>header>div nav#menu.collapsed span.togglerText {
+		color: black;
 	}
 	body>header>div nav#menu.collapsed ul {
 		height: 0
@@ -1769,8 +1785,7 @@ body#pageGallery article>section>figure>img {
 		right: auto
 	}
 	body#pageHomepage {
-		background: url(../img/photos/homepage/iphone_portrait.jpg) no-repeat
-			50% 50%;
+		background: url(../img/photos/homepage/iphone4_portrait.jpg) no-repeat 50% 50%;
 		background-attachment: fixed;
 		-webkit-background-size: 320px 480px;
 		-moz-background-size: 320px 480px;
@@ -1820,7 +1835,7 @@ body#pageGallery article>section>figure>img {
 	}
 	body#pageCamere article>section aside>ul li {
 		margin: 0 auto 15px;
-		float: none
+		float: none;
 	}
 	body#pageServizi article>section aside {
 		width: auto;
@@ -2122,7 +2137,7 @@ body#pageGallery article>section>figure>img {
 		margin-right: -1px
 	}
 	body#pageHomepage {
-		background-image: url(../img/photos/homepage/iphone_portrait.jpg);
+		background-image: url(../img/photos/homepage/iphone4_portrait.jpg);
 		-webkit-background-size: 320px 480px;
 		-moz-background-size: 320px 480px;
 		background-size: 320px 480px
@@ -2433,3 +2448,13 @@ body#pageGallery article>section>figure>img {
 		width: 36%
 	}
 }
+/*iphone5 protrait */
+@media screen and (device-aspect-ratio: 40/71) and (orientation:portrait) 
+{
+		body#pageHomepage {
+		background: url(../img/photos/homepage/iphone5_portrait.jpg) no-repeat 50% 50%;
+		-webkit-background-size: 320px 568px;
+		-moz-background-size: 320px 568px;
+		background-size: 320px 568px
+	}
+	}
