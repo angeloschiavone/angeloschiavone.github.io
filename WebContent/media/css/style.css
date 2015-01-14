@@ -934,7 +934,7 @@ body#pagePrezzi article>section table tbody th {
 	text-align: right;
 	vertical-align: bottom;
 	background: #fafafa;
-	background-image: url(../img/photos/prezzi_camere_background.jpg);
+ 
 	background-repeat: no-repeat
 }
 
@@ -951,11 +951,14 @@ body#pagePrezzi article>section table tbody th strong {
 }
 
 body#pagePrezzi article>section table tbody tr#room1 th {
-	background-position: 0 bottom
+	background-image: url(../img/photos/camera_1.jpg);
+	background-position: center;
+	
 }
 
 body#pagePrezzi article>section table tbody tr#room2 th {
-	background-position: -250px bottom
+	background-image:  url(../img/photos/camera_2.jpg);
+		background-position: center;
 }
 
 body#pagePrezzi article>section table tbody tr#room3 th {
