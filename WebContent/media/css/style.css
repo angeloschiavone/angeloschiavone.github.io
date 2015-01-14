@@ -320,10 +320,6 @@ body#pagePrezzi>header>em.backimage {
 	background-image: url(../img/photos/headers/header_pianoforte.jpg)
 }
 
-body#pagePrenotazioni>header>em.backimage {
-	background-image: url(../img/photos/headers/letto2.jpg)
-}
-
 body#pageRegolamento>header>em.backimage {
 	background-image: url(../img/photos/headers/bottiglie.jpg)
 }
@@ -332,12 +328,8 @@ body#pageContatti>header>em.backimage {
 	background-image: url(../img/photos/headers/header_esterno.jpg)
 }
 
-body#pageCredits>header>em.backimage {
-	background-image: url(../img/photos/headers/dondolo.jpg)
-}
-
 body#pageGallery>header>em.backimage {
-	background-image: url(../img/photos/headers/wall2.jpg)
+	background-image: url(../img/photos/headers/header_esterno.jpg)
 }
 
 body>header>div nav#lang ul li.it a {
@@ -1426,136 +1418,20 @@ body#pageContatti article>section #gwrap+a {
 	color: #999
 }
 
-body#pageCredits article>section {
-	position: relative;
-	height: 500px
+body#pageGallery article > section > figure {
+  padding: 0px 5px;
 }
-
-body#pageCredits article>section>img {
-	position: absolute;
-	top: 340px;
-	left: 0
-}
-
-body#pageCredits article>section>ul {
-	position: absolute;
-	top: 325px;
-	right: 0
-}
-
-body#pageCredits article>section>ul li {
-	position: relative;
-	width: 190px;
-	height: 80px;
-	padding-left: 225px
-}
-
-body#pageCredits article>section>ul li>span {
-	position: absolute;
-	top: 20px;
-	left: 0;
-	width: 195px;
-	height: 30px;
-	background-image: url(../img/credits/credits_labels.gif);
-	background-repeat: no-repeat;
-	text-indent: -9999px;
-	overflow: hidden
-}
-
-body#pageCredits article>section>ul li>p,body#pageCredits article>section>ul li>a img
-	{
-	position: absolute;
-	left: 225px
-}
-
-body#pageCredits article>section>ul li#boxAW>a img {
-	top: -25px
-}
-
-body#pageCredits article>section>ul li#boxCD>a img {
-	top: 25px
-}
-
-body#pageCredits article>section>ul li#boxGHS>a img {
-	top: 25px
-}
-
-body#pageCredits article>section>ul li#boxBV {
-	margin-top: 100px
-}
-
-body#pageCredits article>section>ul li#boxBV>p {
-	top: 24px;
-	font-size: 15px
-}
-
-body#pageCredits.it article>section>ul li#boxAW>span {
-	background-position: 0 0
-}
-
-body#pageCredits.it article>section>ul li#boxCD>span {
-	background-position: 0 -30px
-}
-
-body#pageCredits.it article>section>ul li#boxGHS>span {
-	background-position: 0 -60px
-}
-
-body#pageCredits.it article>section>ul li#boxBV>span {
-	background-position: 0 -90px
-}
-
-body#pageCredits.en article>section>ul li#boxCD>span {
-	background-position: 0 -120px
-}
-
-body#pageCredits.en article>section>ul li#boxGHS>span {
-	background-position: 0 -150px
-}
-
-body#pageCredits.en article>section>ul li#boxBV>span {
-	background-position: 0 -180px
-}
-
-body#pageCredits.de article>section>ul li#boxCD>span {
-	background-position: 0 -210px
-}
-
-body#pageCredits.de article>section>ul li#boxGHS>span {
-	background-position: 0 -240px
-}
-
-body#pageCredits.de article>section>ul li#boxBV>span {
-	background-position: 0 -270px
-}
-
-body#pageCredits.fr article>section>ul li#boxCD>span {
-	background-position: 0 -300px
-}
-
-body#pageCredits.fr article>section>ul li#boxGHS>span {
-	background-position: 0 -330px
-}
-
-body#pageCredits.fr article>section>ul li#boxBV>span {
-	background-position: 0 -360px
-}
-
-body#pageGallery article>section>figure {
-	padding: 0 5px
-}
-
-body#pageGallery article>section>figure>img {
-	position: relative;
-	width: 100%;
-	height: auto;
-	margin: 10px 0;
-	padding: 5px;
-	display: block;
-	background: url(../img/grid.gif) repeat 50% 50%;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box
+body#pageGallery article > section > figure > img {
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin: 10px 0px;
+  padding: 5px;
+  display: block;
+  background: url(../img/grid.gif) repeat 50% 50%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 @media only screen and (max-width:1023px) {
