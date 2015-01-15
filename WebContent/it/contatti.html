@@ -74,11 +74,25 @@
 				<h1>Contatti</h1>
 			</hgroup>
 			<aside>
-				<a href="../media/img/modified/metro-grande.gif"><img
-					src="../media/img/modified/metropolitana.jpg" /></a>
+			
+			
+ <script >
+ 	/* switch between metro pics*/
+    function changeImage() 
+    {
+		if(  document.getElementById("imgMetro").src.substr(-1) === "g" )
+        { 
+            document.getElementById("imgMetro").src = "../media/img/modified/metro-grande.gif";
+        }
+        else 
+        {
+            document.getElementById("imgMetro").src = "../media/img/modified/metropolitana.jpg";
+        }
+    }
+    
+ </script>
+		      <img id="imgMetro" src="../media/img/modified/metropolitana.jpg" onclick="changeImage()"/> 
 			</aside>
-
-
 			<section>
 
 				<p>?????? si trova a due minuti a piedi dalla fermata della
