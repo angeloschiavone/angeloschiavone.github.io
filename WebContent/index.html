@@ -5,6 +5,12 @@
 	<!-- [GENERAL] -->
     <title>Benvenuti - Bed & Breakfast a Milano</title>
 
+<script type="text/javascript">
+ var userLang = navigator.language || navigator.userLanguage; 
+  if(userLang.indexOf("it")==-1)
+  	window.location.replace("./en/index.html");
+</script>
+
 		<!-- [META TAGS] -->
     <meta charset="utf-8">
 
@@ -34,20 +40,7 @@
 	<!-- [SEARCH ENGINES] -->
 	<meta name="robots" content="all" />
 
-<script type="text/javascript">
- var userLang = navigator.language || navigator.userLanguage;
-  
-  if(userLang.indexOf("it")== -1)
-  	window.location.replace("./en/index.html");
-/* if(userLang==="en")
- 	window.location.replace("./en/index.html");
- else if(userLang==="fr")
- 	window.location.replace("./fr/index.html");
- else if(userLang==="es")
- 	window.location.replace("./es/index.html");
- else if(userLang==="de")
- 	window.location.replace("./de/index.html"); */ 	
- </script>
+
 
 </head>
 <body id="pageHomepage" class="it">
