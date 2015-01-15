@@ -2338,8 +2338,7 @@ body#pageGallery article > section > figure > img {
 @media screen and (device-aspect-ratio: 40/71) and
 	(orientation:portrait) {
 	body#pageHomepage {
-		background: url(../img/photos/homepage/iphone5_portrait.jpg) no-repeat
-			50% 50%;
+		background: url(../img/photos/homepage/iphone5_portrait.jpg) no-repeat 50% 50%;
 		-webkit-background-size: 320px 568px;
 		-moz-background-size: 320px 568px;
 		background-size: 320px 568px
@@ -2352,10 +2351,9 @@ body#pageGallery article > section > figure > img {
 @media only screen 
 and (min-device-width : 320px) 
 and (max-device-width : 568px) 
-and (orientation : landscape) {
+and (orientation:landscape) {
 	body#pageHomepage {
-		background: url(../img/photos/homepage/iphone5_landscape.jpg) no-repeat
-			50% 50%;
+		background: url(../img/photos/homepage/iphone5_landscape.jpg) no-repeat 50% 50%;
 		-webkit-background-size: 568px 320px;
 		-moz-background-size: 568px 320px;
 		background-size: 568px 320px 
