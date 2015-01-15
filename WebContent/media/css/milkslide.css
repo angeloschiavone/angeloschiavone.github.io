@@ -2,14 +2,17 @@
 	z-index: 50000;
 	background-color: #000;
 	background-image: url(../img/grid.gif);
-	cursor: pointer
+	cursor: pointer;
+
 }
 
 #mbox-mainbox {
 	z-index: 50001;
 	top: 10%;
 	padding: 10px;
-	background-color: #fff
+	background-color: #fff;
+	min-width: 180px;
+
 }
 
 #mbox-mainbox.mbox-loading {
@@ -17,29 +20,33 @@
 }
 
 #mbox-filebox {
+	
 	position: relative;
 	margin: 0;
 	padding: 0;
 	overflow: hidden;
-	border: 0
+	border: 0;
+
 }
 
 #mbox-filebox img {
 	display: block;
-	border: 0
+	border: 0;
+	margin-left: auto;
+    margin-right: auto;
 }
 
 #mbox-topbar {
 	position: relative;
 	width: 100%;
-	height: 50px;
+	height: 32px;
 	padding-bottom: 5px
 }
 
 #mbox-bottom {
 	position: relative;
 	height: 65px;
-	padding: 5px 130px
+ 	padding: 5px 50px
 }
 
 #mbox-index {
@@ -80,8 +87,8 @@ body.fr #mbox-index {
 
 #mbox-close {
 	position: absolute;
-	width: 120px;
-	height: 42px;
+	width: 32px;
+	height: 32px;
 	display: none;
 	background-repeat: no-repeat;
 	outline: 0;
@@ -97,25 +104,13 @@ body.fr #mbox-index {
 	color: #222
 }
 
-body.it #mbox-close {
-	background-image: url(../img/milkslide/close_it.png)
-}
-
-body.en #mbox-close {
-	background-image: url(../img/milkslide/close_en.png)
-}
-
-body.de #mbox-close {
-	background-image: url(../img/milkslide/close_de.png)
-}
-
-body.fr #mbox-close {
-	background-image: url(../img/milkslide/close_fr.png)
+body #mbox-close {
+	background-image: url(../img/milkslide/chiudi.png)
 }
 
 #mbox-prev {
 	position: absolute;
-	width: 100px;
+	width: 36px;
 	height: 42px;
 	display: none;
 	background-repeat: no-repeat;
@@ -135,7 +130,7 @@ body.fr #mbox-close {
 
 #mbox-next {
 	position: absolute;
-	width: 100px;
+	width: 36px;
 	height: 42px;
 	display: none;
 	background-repeat: no-repeat;
