@@ -1459,7 +1459,7 @@ body#pageGallery article > section > figure > img {
 }
 
 @media only screen and (min-device-width:320px) and
-	(max-device-width:480px) {
+	(max-device-width:667px) {
 	body>header {
 		position: relative;
 		height: auto;
@@ -2043,7 +2043,7 @@ body#pageGallery article > section > figure > img {
 }
 
 @media only screen and (min-device-width:320px) and
-	(max-device-width:480px) and (orientation:landscape) {
+	(max-device-width:667px) and (orientation:landscape) {
 	body>header>div nav#menu ul {
 		height: 82px
 	}
@@ -2058,7 +2058,7 @@ body#pageGallery article > section > figure > img {
 		font-size: 15px
 	}
 	body#pageHomepage {
-		background-image: url(../img/photos/homepage/iphone_landscape.jpg);
+		background-image: url(../img/photos/homepage/iphone4_landscape.jpg);
 		-webkit-background-size: 480px 320px;
 		-moz-background-size: 480px 320px;
 		background-size: 480px 320px
@@ -2348,3 +2348,20 @@ body#pageGallery article > section > figure > img {
 		color: rgba(250, 250, 250, 0.9);
 	}
 }
+/*iphone5 landscape */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 568px) 
+and (orientation : landscape) {
+	body#pageHomepage {
+		background: url(../img/photos/homepage/iphone5_landscape.jpg) no-repeat
+			50% 50%;
+		-webkit-background-size: 568px 320px;
+		-moz-background-size: 568px 320px;
+		background-size: 568px 320px 
+	}
+	body#pageHomepage>header>div nav#lang2 ul li>a {
+		color: rgba(250, 250, 250, 0.9);
+	}
+}
+
