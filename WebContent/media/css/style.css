@@ -2379,6 +2379,39 @@ and (orientation:portrait) {
 	}
 }
 
+
+/*galaxy s4 portrait */
+@media only screen 
+and (min-device-width : 360px) 
+and (max-device-width : 640px) 
+and (orientation:portrait) {
+	body#pageHomepage {
+		background: url(../img/photos/homepage/iphone6_portrait.jpg) no-repeat 50% 50%;
+		-webkit-background-size: 360px 640px ;
+		-moz-background-size: 360px 640px ;
+		background-size: 360px 640px ; 
+	}
+	body#pageHomepage>header>div nav#lang2 ul li>a {
+		color: rgba(250, 250, 250, 0.9);
+	}
+}
+
+/*galaxy s/s2/w portrait */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 534px) 
+and (orientation:portrait) {
+	body#pageHomepage {
+		background: url(../img/photos/homepage/iphone5_portrait.jpg) no-repeat 50% 50%;
+		-webkit-background-size: 320px 534px ;
+		-moz-background-size: 320px 534px ;
+		background-size: 320px 534px ; 
+	}
+	body#pageHomepage>header>div nav#lang2 ul li>a {
+		color: rgba(250, 250, 250, 0.9);
+	}
+}
+
 /*iphone6 landscape */
 @media only screen 
 and (min-device-width : 375px) 
@@ -2394,3 +2427,6 @@ and (orientation:landscape) {
 		color: rgba(250, 250, 250, 0.9);
 	}
 }
+
+
+
