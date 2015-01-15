@@ -112,7 +112,7 @@ body>header>div>a {
 	height: 95px;
 	text-indent: -9999px;
 	overflow: hidden;
-	background: url(../img/tmp/luna4.png) no-repeat 0 0;
+	background: url(../img/modified/luna4.png) no-repeat 0 0;
 }
 
 body>header>div nav#menu {
@@ -1474,7 +1474,7 @@ body#pageGallery article > section > figure > img {
 		left: 15px;
 		width: 290px;
 		height: 65px;
-		background-image: url(../img/tmp/luna4.png);
+		background-image: url(../img/modified/luna4.png);
 		/*background-image: url(../img/logo_orizzontale@2.png);*/
 		-webkit-background-size: 290px 65px;
 		-moz-background-size: 290px 65px;
@@ -1486,7 +1486,7 @@ body#pageGallery article > section > figure > img {
 		color: rgba(250, 250, 250, 0.9);
 	}
 	body#pageHomepage>header>div>a {
-		background-image: url(../img/tmp/luna4_white.png);
+		background-image: url(../img/modified/luna4_white.png);
 	}
 	body>header>div nav#menu {
 		position: relative;

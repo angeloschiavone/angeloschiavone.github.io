@@ -49,41 +49,6 @@
  	padding: 5px 50px
 }
 
-#mbox-index {
-	position: absolute;
-	width: 100px;
-	height: 42px;
-	display: none;
-	background-repeat: no-repeat;
-	outline: 0;
-	cursor: pointer;
-	-webkit-user-select: none;
-	left: 0;
-	text-align: left;
-	background-position: left top;
-	bottom: 6px;
-	display: none
-}
-
-#mbox-index:hover {
-	color: #222
-}
-
-body.it #mbox-index {
-	background-image: url(../img/milkslide/index_it.png)
-}
-
-body.en #mbox-index {
-	background-image: url(../img/milkslide/index_en.png)
-}
-
-body.de #mbox-index {
-	background-image: url(../img/milkslide/index_de.png)
-}
-
-body.fr #mbox-index {
-	background-image: url(../img/milkslide/index_fr.png)
-}
 
 #mbox-close {
 	position: absolute;

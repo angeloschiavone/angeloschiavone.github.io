@@ -48,11 +48,6 @@ window.addEvent('domready', function() {
 		}
 
 	}
-	
-	/* ==== FORM PRENOTAZIONI ==== */
-	if (document.getElement('#pagePrenotazioni')) {
-		var myBookingForm = new bookingForm('#formPrenotazioni');
-	}
 
 	/* ==== GOOGLE MAP ==== */
 	if (document.getElement('#pageContatti #gmap')) {
@@ -86,24 +81,8 @@ window.addEvent('domready', function() {
 		google.maps.event.addListener(marker, 'click', function() {
 			window.location.href = 'https://www.google.it/maps/place/Via+Privata+Bernardo+da+Canal,+24,+20161+Milano/@45.5141936,9.1710628,17z/data=!4m2!3m1!1s0x4786c0eb7f4ac60d:0x48789106df250089';
 		});
-
 	}
-
 });
-
-
-/*//////////////////////////// PAGELOAD ////////////////////////////
-_______________________________________________________________________________________________________ */
-
-//window.addEvent('load', function() { 	
-//});	
-
-/*//////////////////////////// FUNCTIONS ////////////////////////////
-_______________________________________________________________________________________________________ */
-
-
-/*//////////////////////////// CLASSES ////////////////////////////
-_______________________________________________________________________________________________________ */
 
 
 var pageHeader = new Class({
@@ -141,236 +120,14 @@ var pageHeader = new Class({
 })
 
 var homePage = new Class({
-
 	initialize: function() {
-	
-		// store behaviour objects
 		this.frame = document.getElement('#pageHomepage > article > section > div');
 		this.claims = document.getElements('body#pageHomepage article > aside > div p');
-		
 		if(!is_mobile) {
-
-			// use scripting for IE8/IE7
-			//if(Browser.ie && Browser.version < 9) {
-			//	this.pict = new Element('img').setProperty('src',this.frame.getProperty('data-image'));
-			//	this.frame.grab(this.pict);
-			// use css3 for other browsers
-			//} else {
-				this.frame.setStyle('backgroundImage','url("'+this.frame.getProperty('data-image')+'")');
-			//}
-
+			this.frame.setStyle('backgroundImage','url("'+this.frame.getProperty('data-image')+'")');
 		}
-		
-		// when user clicks on claims, go to first page of website
 		this.claims.addEvent('click',function(){ window.location = document.getElement('body > header > div nav#menu a').getProperty('href'); });
-
 	}
-
-})
-
-var bookingForm = new Class({
-
-	initialize: function(form_id) {
-	
-		// set locale
-		Locale.use('it-IT');
-		
-		// set custom locale translations
-		var b = document.getElement('body');
-		if(b.hasClass('en')) {
-			this.mylocale = {
-				"notvalid" : "not valid",
-				"required" : "required",
-				"verify" : "attention: please verify inserted data"
-			};
-		} else if(b.hasClass('de')) {
-			this.mylocale = {
-				"notvalid" : "ungültig",
-				"required" : "pflichtangabe",
-				"verify" : "achtung: überprüfen sie die eingegebenen daten"
-			};
-		} else if(b.hasClass('fr')) {
-			this.mylocale = {
-				"notvalid" : "incorrecte",
-				"required" : "obligatoire",
-				"verify" : "attention: vérifier les données entrées"
-			};
-		} else {
-			this.mylocale = {
-				"notvalid" : "non valido",
-				"required" : "obbligatorio",
-				"verify" : "attenzione: verificare i dati inseriti"
-			};
-		}
-	
-		// store behaviour objects
-		this.form = document.getElement(form_id);
-		this.formfields = this.form.getElements('input,textarea,select');
-		this.formsubmit = this.form.getElement('fieldset.submit .button');
-		this.formfeedback = this.form.getElement('#boxFormFeedback');
-		this.selrooms = this.form.getElements('#room1beds,#room2beds,#room3beds');
-		this.inpdates = this.form.getElements('#arrival,#departure');
-		
-		// add the highlight behaviour to input elements
-		this.formfields.each(function(el){
-			el.addEvents({
-				focus: this.set_highlight_focused.pass(el,this),
-				click: this.set_highlight_focused.pass(el,this),
-				blur: this.unset_highlighted
-			},this);
-		},this);
-		
-		// handle the onchange for the room
-		this.selrooms.addEvent('change',function(){
-			var chk = this.getParent().getElement('input[type=checkbox]');
-			if(this.get('value')!='' && !chk.checked) { chk.checked=true }
-		});
-
-		// handle the date-pickers
-		if(Browser.Platform.ios) {
-			this.inpdates.each(function(el){
-				// create a native datepicker
-				var el_ios = el.clone().setProperty('type','date').setProperty('name',el.getProperty('name')+'_ios').setProperty('id',el.getProperty('id')+'_ios');
-				// hide text control
-				el.setProperty('type','hidden');
-				// inject the ios datepicker
-				el.getParent().grab(el_ios);
-				// handle change values of datepicker
-				el_ios.addEvent('blur',function(){
-					var cur_date_array = this.get('value').split('-');
-					el.set('value',cur_date_array[2] + "/" + cur_date_array[1] + "/" + cur_date_array[0]);
-				});
-
-			}.bind(this));
-		} else {
-			var minPick = new Date();
-			var maxPick = new Date().increment('month',12);
-			new Picker.Date(this.inpdates, {
-				positionOffset: {x: 0, y: 5},
-				draggable: false,
-				format: '%d/%m/%Y',
-				// toggle: $$('.myLink')
-				startView: 'days',
-				minDate: minPick,
-				maxDate: maxPick,
-				yearsPerPage: 12,
-				yearPicker: false,
-				pickerClass: 'datepicker_dashboard'
-			});
-		}
-		
-		// handle form submission
-		this.formsubmit.addEvent('click', this.send_form.bind(this));
-		this.form.addEvent('keydown', function(e){ if (e.key == 'enter') { this.send_form(e); } }.bind(this));
-
-	},
-
-	unset_highlighted: function() {
-		this.form.getElements('.focused').removeClass("focused");
-	},
-
-	set_highlight_focused: function(el) {
-		this.unset_highlighted();
-		document.id(el).getParent('.field').addClass("focused");
-	},
-
-	reset_validation: function() {
-		this.form.getElements('.field.notvalid').removeClass('notvalid');
-		this.form.getElements('.field i').set('text','*');
-	},
-
-	send_form: function(event) {
-	
-		// stop propagation
-		event.stop();
-
-		// avoid multiple submissions
-		if(this.form.hasClass('disabled')) { return; }
-
-		// temporarely disable submit button
-		this.form.addClass('disabled');
-		
-		// remove previous not-valid messages
-		this.reset_validation();
-		
-		// give user a feedback
-		this.formfeedback.set('text','invio messaggio in corso...').setProperty('class','processing');
-		
-		// submit form via ajax
-		new Request.JSON({ url: this.form.get('action'), data: "mode=ajax"+"&"+ this.form.toQueryString(), onComplete: this.show_feedback.bind(this) }).send();
-
-	},
-
-	show_feedback: function(response){
-
-		if(response.status=='success') {
-		
-			// give user a feedback
-			this.formfeedback.set('html',response.message).setProperty('class','success');
-			
-			// track event on google analytics
-			try {
-				_gaq.push(['_trackEvent',"prenotazioni_invio","completato"]);
-			} catch(err) {}
-
-			// delayed execution
-			(function(){ 
-
-				// reset feedback message
-				this.formfeedback.set('html','').setProperty('class','');
-
-				// remove previous not-valid messages
-				this.reset_validation();
-				
-				// reset form
-				this.form.reset();
-
-				// re-enable submit button, at last...
-				this.form.removeClass('disabled');
-
-			}).delay(10000,this);
-		
-		} else if(response.status=='notvalid') {
-		
-			Object.each(response.validation,function(status,name) {
-				
-				// get field element
-				var fld = this.form.getElement('[name='+name+']').getParent('.field');
-				var msg = fld.getElement('i');
-
-				// highlight field as not valid
-				fld.addClass('notvalid');
-				
-				// update field message, if exists
-				if(msg) {
-					if(status.required) {
-						msg.set('text',this.mylocale.required);
-					} else {
-						if(status.format) {
-							msg.set('text',this.mylocale.notvalid);
-						}
-					}
-				}
-			},this);
-
-			// give user a feedback
-			this.formfeedback.set('html',this.mylocale.verify).setProperty('class','error');
-
-			// re-enable submit button, at last...
-			this.form.removeClass('disabled');
-
-		} else {
-
-			// give user a feedback
-			this.formfeedback.set('html',response.message).setProperty('class','error');
-
-			// re-enable submit button, at last...
-			this.form.removeClass('disabled');
-
-		}
-
-	}
-
 })
 
 var photoGallery = new Class({
