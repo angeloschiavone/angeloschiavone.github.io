@@ -2363,3 +2363,34 @@ and (orientation:landscape) {
 	}
 }
 
+/*iphone6 portrait */
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 667px) 
+and (orientation:portrait) {
+	body#pageHomepage {
+		background: url(../img/photos/homepage/iphone6_portrait.jpg) no-repeat 50% 50%;
+		-webkit-background-size: 375px 667px ;
+		-moz-background-size: 375px 667px ;
+		background-size: 375px 667px ; 
+	}
+	body#pageHomepage>header>div nav#lang2 ul li>a {
+		color: rgba(250, 250, 250, 0.9);
+	}
+}
+
+/*iphone6 landscape */
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 667px) 
+and (orientation:landscape) {
+	body#pageHomepage {
+		background: url(../img/photos/homepage/iphone6_landscape.jpg) no-repeat 50% 50%;
+		-webkit-background-size: 667px 375px;
+		-moz-background-size: 667px 375px;
+		background-size: 667px 375px;
+	}
+	body#pageHomepage>header>div nav#lang2 ul li>a {
+		color: rgba(250, 250, 250, 0.9);
+	}
+}
