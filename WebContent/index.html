@@ -36,8 +36,8 @@
 
 <script type="text/javascript">
  var userLang = navigator.language || navigator.userLanguage;
-  alert ("The language is: " + userLang);
-  if(userLang !== "it")
+  
+  if(userLang.indexOf("it")== -1)
   	window.location.replace("./en/index.html");
 /* if(userLang==="en")
  	window.location.replace("./en/index.html");
