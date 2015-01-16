@@ -6,11 +6,23 @@
     <title>Benvenuti - Bed & Breakfast a Milano</title>
 
 <script type="text/javascript">
-
- var userLang = navigator.language || navigator.userLanguage;
- window.alert("navigator.userAgent "+navigator.userAgent); 
-  if(userLang.indexOf("it")==-1)
+	
+var lang, androidLang;
+// works for earlier version of Android (2.3.x)
+if (navigator && navigator.userAgent && (androidLang = navigator.userAgent.match(/android.*\W(\w\w)-(\w\w)\W/i))) {
+    lang = androidLang[1];
+} else {
+    // works for iOS and Android 4.x
+    lang = navigator.userLanguage || navigator.language;
+}  	
+  if(lang.indexOf("it")!=-1)
+  {
+  	/* do nothing */
+  }
+  else if(lang.indexOf("en")!=-1)
+  {
   	window.location.replace("./en/index.html");
+  }
 </script>
 
 		<!-- [META TAGS] -->
