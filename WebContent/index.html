@@ -6,7 +6,9 @@
     <title>Benvenuti - Bed & Breakfast a Milano</title>
 
 <script type="text/javascript">
- var userLang = navigator.language || navigator.userLanguage; 
+
+ var userLang = navigator.language || navigator.userLanguage;
+ window.alert("userLang "+userLang); 
   if(userLang.indexOf("it")==-1)
   	window.location.replace("./en/index.html");
 </script>
