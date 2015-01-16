@@ -287,9 +287,13 @@ body.it>header>div nav#lang2 ul li.it2 a span,body.en>header>div nav#lang2 ul li
 	border-bottom-color: rgba(50, 50, 50, 0.9);
 }
 
-body>header>div nav#menu.casa ul li.casa a span,body>header>div nav#menu.camere ul li.camere a span,body>header>div nav#menu.servizi ul li.servizi a span,body>header>div nav#menu.prezzi ul li.prezzi a span,body>header>div nav#menu.contatti ul li.contatti a span
-	{
-	border-bottom-color: rgba(255, 255, 255, 0.8);
+body>header>div nav#menu.casa ul li.casa2 a span,
+body>header>div nav#menu.camere ul li.camere2 a span,
+body>header>div nav#menu.servizi ul li.servizi2 a span,
+body>header>div nav#menu.prezzi ul li.prezzi2 a span,
+body>header>div nav#menu.contatti ul li.contatti2 a span
+{
+	border-bottom-color: rgba(50, 50, 50, 0.9);
 }
 
 body>article {
@@ -1470,66 +1474,6 @@ body#pageGallery article>section>figure>img {
 	body#pageCredits article>section>ul li#boxBV>p {
 		top: auto;
 		font-size: 15px
-	}
-	body.it>header>div nav#menu ul li.casa a {
-		background-position: -10px -10px
-	}
-	body.it>header>div nav#menu ul li.camere a {
-		background-position: -210px -10px
-	}
-	body.it>header>div nav#menu ul li.servizi a {
-		background-position: -410px -10px
-	}
-	body.it>header>div nav#menu ul li.prezzi a {
-		background-position: -610px -10px
-	}
-	body.it>header>div nav#menu ul li.contatti a {
-		background-position: -1010px -10px
-	}
-	body.en>header>div nav#menu ul li.casa a {
-		background-position: -10px -50px
-	}
-	body.en>header>div nav#menu ul li.camere a {
-		background-position: -210px -50px
-	}
-	body.en>header>div nav#menu ul li.servizi a {
-		background-position: -410px -50px
-	}
-	body.en>header>div nav#menu ul li.prezzi a {
-		background-position: -610px -50px
-	}
-	body.en>header>div nav#menu ul li.contatti a {
-		background-position: -1010px -50px
-	}
-	body.de>header>div nav#menu ul li.casa a {
-		background-position: -10px -90px
-	}
-	body.de>header>div nav#menu ul li.camere a {
-		background-position: -210px -90px
-	}
-	body.de>header>div nav#menu ul li.servizi a {
-		background-position: -410px -90px
-	}
-	body.de>header>div nav#menu ul li.prezzi a {
-		background-position: -610px -90px
-	}
-	body.de>header>div nav#menu ul li.contatti a {
-		background-position: -1010px -90px
-	}
-	body.fr>header>div nav#menu ul li.casa a {
-		background-position: -10px -130px
-	}
-	body.fr>header>div nav#menu ul li.camere a {
-		background-position: -210px -130px
-	}
-	body.fr>header>div nav#menu ul li.servizi a {
-		background-position: -410px -130px
-	}
-	body.fr>header>div nav#menu ul li.prezzi a {
-		background-position: -610px -130px
-	}
-	body.fr>header>div nav#menu ul li.contatti a {
-		background-position: -1010px -130px
 	}
 }
 
