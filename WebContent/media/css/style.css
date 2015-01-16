@@ -35,7 +35,7 @@ html.full {
 
 body {
 	position: relative;
-	font-family: Helvetica, Arial, sans-serif;
+	font-family: Helvetica, "Segoe UI", Tahoma, sans-serif;
 	font-size: 16px;
 	text-align: left;
 	color: #222;
@@ -75,7 +75,7 @@ img {
 }
 
 .amp {
-	font-family: "Segoe UI", Tahoma, sans-serif;
+	font-family: Helvetica, "Segoe UI", Tahoma, sans-serif;
 	font-size: .8em;
 	font-weight: normal;
 	font-style: normal !important
@@ -320,10 +320,6 @@ body#pagePrezzi>header>em.backimage {
 	background-image: url(../img/photos/headers/header_pianoforte.jpg)
 }
 
-body#pageRegolamento>header>em.backimage {
-	background-image: url(../img/photos/headers/bottiglie.jpg)
-}
-
 body#pageContatti>header>em.backimage {
 	background-image: url(../img/photos/headers/header_esterno.jpg)
 }
@@ -411,7 +407,7 @@ body>article>section hgroup {
 }
 
 body>article>section h1 {
-	font-family: "Segoe UI", Tahoma, sans-serif;
+	font-family: Helvetica, "Segoe UI", Tahoma, sans-serif;
 	font-size-adjust: .492;
 	font-weight: 100;
 	font-style: normal;
@@ -422,7 +418,7 @@ body>article>section h1 {
 
 body>article>section h2 {
 	margin-top: 18px;
-	font-family: "Segoe UI", Tahoma, sans-serif;
+	font-family: Helvetica, "Segoe UI", Tahoma, sans-serif;
 	font-size-adjust: .492;
 	font-weight: 100;
 	font-style: normal;
@@ -434,7 +430,7 @@ body>article>section h2 {
 body>article>section p {
 	margin-bottom: 20px;
 	font-size: 16px;
-	font-family: "Segoe UI", Tahoma, sans-serif;
+	font-family: Helvetica, "Segoe UI", Tahoma, sans-serif;
 	line-height: 1.2em;
 	color: #333
 }
@@ -451,7 +447,7 @@ body>article>section blockquote {
 	position: relative;
 	margin-top: 16px;
 	padding: 0 24px;
-	font-family: "Segoe UI", Tahoma, sans-serif;
+	font-family: Helvetica, "Segoe UI", Tahoma, sans-serif;
 	font-style: italic;
 	font-size: 16px;
 	line-height: 20px;
@@ -695,7 +691,7 @@ body#pageHomepage article>aside>div p {
 	margin: 0;
 	padding: 9px 15px 9px 65px;
 	display: inline-block;
-	font-family: "Bree Thin", "Bree-Thin", Helvetica, Arial, sans-serif;
+	font-family: Helvetica, "Segoe UI", Tahoma, sans-serif;
 	font-size-adjust: .492;
 	font-weight: 100;
 	font-style: normal;
@@ -808,7 +804,7 @@ body#pageCamere article>section aside>ul li>a h3 {
 	right: 5px;
 	padding: 5px 10px;
 	display: block;
-	font-family: "Bree Thin", "Bree-Thin", Helvetica, Arial, sans-serif;
+	font-family: Helvetica, "Segoe UI", Tahoma, sans-serif;
 	font-size-adjust: .492;
 	font-weight: 100;
 	font-style: normal;
@@ -996,352 +992,6 @@ body#pagePrezzi article>section table tfoot td>span>sup {
 }
 
 body#pagePrezzi article>section table tfoot td strong {
-	font-weight: bold
-}
-
-body#pagePrenotazioni article>section form {
-	padding: 5px;
-	background: url(../img/grid.gif) repeat 50% 50%
-}
-
-body#pagePrenotazioni article>section form h3 {
-	padding: 12px 20px 15px;
-	font-size: 18px;
-	line-height: 18px;
-	font-weight: bold
-}
-
-body#pagePrenotazioni article>section form>div {
-	padding: 30px 30px;
-	background: #fff
-}
-
-body#pagePrenotazioni article>section form table.wrapper {
-	table-layout: fixed;
-	border-collapse: collapse;
-	border-spacing: 0
-}
-
-body#pagePrenotazioni article>section form table.wrapper td {
-	width: 50%;
-	padding: 0;
-	text-align: left;
-	vertical-align: top;
-	border-left: 1px solid #e4e4e4
-}
-
-body#pagePrenotazioni article>section form table.wrapper td:first-child
-	{
-	border: 0
-}
-
-body#pagePrenotazioni article>section form legend {
-	display: block;
-	font-weight: bold;
-	padding-bottom: 4px
-}
-
-body#pagePrenotazioni article>section form fieldset {
-	position: relative;
-	margin-bottom: 20px;
-	padding: 0;
-	padding: 15px 0 0 0;
-	border-top: 1px dotted #ddd
-}
-
-body#pagePrenotazioni article>section form fieldset .field {
-	position: relative;
-	width: 100%;
-	margin-bottom: 10px;
-	display: block;
-	float: left
-}
-
-body#pagePrenotazioni article>section form fieldset .field>label {
-	width: auto;
-	display: block;
-	font-size: 14px;
-	line-height: 20px;
-	text-align: left;
-	color: #333
-}
-
-body#pagePrenotazioni article>section form fieldset .field>label i {
-	color: #c00;
-	padding-left: 3px
-}
-
-body#pagePrenotazioni article>section form fieldset .field>input,body#pagePrenotazioni article>section form fieldset .field>textarea
-	{
-	width: 95%;
-	margin: 0;
-	padding: 4px;
-	display: block;
-	font-size: 16px;
-	line-height: 18px;
-	background: #fff;
-	border: 1px solid #ccc;
-	-webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
-	-moz-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
-	box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1)
-}
-
-body#pagePrenotazioni article>section form fieldset .field>input:-moz-placeholder,body#pagePrenotazioni article>section form fieldset .field>textarea:-moz-placeholder
-	{
-	font-family: Cambria, Georgia, Times, Times New Roman, serif;
-	font-size: .9em;
-	line-height: 1.2em;
-	font-style: italic;
-	color: #ccc
-}
-
-body#pagePrenotazioni article>section form fieldset .field>input::-webkit-input-placeholder,body#pagePrenotazioni article>section form fieldset .field>textarea::-webkit-input-placeholder
-	{
-	font-family: Cambria, Georgia, Times, Times New Roman, serif;
-	font-size: .9em;
-	line-height: 1.2em;
-	font-style: italic;
-	color: #ccc
-}
-
-body#pagePrenotazioni article>section form fieldset .field>input::-moz-selection,body#pagePrenotazioni article>section form fieldset .field>textarea::-moz-selection
-	{
-	background: #ccc;
-	color: inherit
-}
-
-body#pagePrenotazioni article>section form fieldset .field>input::selection,body#pagePrenotazioni article>section form fieldset .field>textarea::selection
-	{
-	background: #ccc;
-	color: inherit
-}
-
-body#pagePrenotazioni article>section form fieldset .field input::-webkit-outer-spin-button,body#pagePrenotazioni article>section form fieldset .field input::-webkit-inner-spin-button
-	{
-	-webkit-appearance: none;
-	margin: 0
-}
-
-body#pagePrenotazioni article>section form fieldset .field>span {
-	display: block;
-	margin-top: 8px
-}
-
-body#pagePrenotazioni article>section form fieldset .field>span input[type=radio],body#pagePrenotazioni article>section form fieldset .field>span input[type=checkbox]
-	{
-	margin-left: 5px;
-	margin-right: 10px;
-	float: left
-}
-
-body#pagePrenotazioni article>section form fieldset .field>span em {
-	font-size: 15px;
-	line-height: 16px
-}
-
-body#pagePrenotazioni article>section form fieldset .field.half {
-	width: 50%
-}
-
-body#pagePrenotazioni article>section form fieldset .field.half>input,body#pagePrenotazioni article>section form fieldset .field.half>select,body#pagePrenotazioni article>section form fieldset .field.half>textarea
-	{
-	width: 90%
-}
-
-body#pagePrenotazioni article>section form fieldset .field table.rooms {
-	width: 98%;
-	table-layout: fixed;
-	border-spacing: 0 6px;
-	margin-bottom: 10px
-}
-
-body#pagePrenotazioni article>section form fieldset .field table.rooms th
-	{
-	width: 125px;
-	padding: 0;
-	text-align: left;
-	vertical-align: middle;
-	border: 0
-}
-
-body#pagePrenotazioni article>section form fieldset .field table.rooms th img
-	{
-	display: block;
-	margin-right: 4px
-}
-
-body#pagePrenotazioni article>section form fieldset .field table.rooms td
-	{
-	width: auto;
-	padding: 0;
-	text-align: left;
-	vertical-align: middle;
-	background: #f4f4f4;
-	border: 0
-}
-
-body#pagePrenotazioni article>section form fieldset .field table.rooms td label
-	{
-	margin-bottom: 4px;
-	margin-left: 20px;
-	display: block;
-	font-size: 14px;
-	line-height: 16px;
-	font-weight: bold
-}
-
-body#pagePrenotazioni article>section form fieldset .field table.rooms td input
-	{
-	margin-left: 25px;
-	margin-right: 5px
-}
-
-body#pagePrenotazioni article>section form fieldset .field table.rooms td select
-	{
-	width: 180px
-}
-
-body#pagePrenotazioni article>section form #fldConditions .field {
-	margin-bottom: 20px
-}
-
-body#pagePrenotazioni article>section form .col1 legend,body#pagePrenotazioni article>section form .col1 fieldset
-	{
-	margin-right: 30px
-}
-
-body#pagePrenotazioni article>section form .col2 legend,body#pagePrenotazioni article>section form .col2 fieldset
-	{
-	margin-left: 30px
-}
-
-body#pagePrenotazioni article>section form fieldset .focused>label {
-	color: #111
-}
-
-body#pagePrenotazioni article>section form fieldset .focused>input,body#pagePrenotazioni article>section form fieldset .focused>textarea
-	{
-	outline: 0;
-	border-color: #777
-}
-
-body#pagePrenotazioni article>section form fieldset.submit {
-	margin-top: 10px;
-	margin-bottom: 0;
-	padding: 30px 10px 30px 120px;
-	text-align: left;
-	background: #f4f4f4
-}
-
-body#pagePrenotazioni article>section form fieldset.submit a.button {
-	display: block;
-	width: 142px;
-	height: 42px;
-	text-indent: -9999px;
-	overflow: hidden
-}
-
-body#pagePrenotazioni article>section form fieldset.submit a.button:hover
-	{
-	background-position: left bottom
-}
-
-body#pagePrenotazioni article>section form #boxFormFeedback {
-	position: absolute;
-	top: 32px;
-	left: 290px;
-	width: 400px;
-	height: 20px;
-	padding: 8px 35px;
-	display: none;
-	font-size: 12px;
-	line-height: 21px;
-	font-weight: bold;
-	text-align: center;
-	border: 1px solid transparent
-}
-
-body#pagePrenotazioni article>section form #boxFormFeedback.processing {
-	display: block;
-	color: #666;
-	background-color: #fafafa;
-	border-color: #e4e4e4
-}
-
-body#pagePrenotazioni article>section form #boxFormFeedback.success {
-	display: block;
-	color: #6eaf1f;
-	background-color: #edf5e3;
-	border-color: #a0cb6c
-}
-
-body#pagePrenotazioni article>section form #boxFormFeedback.error {
-	display: block;
-	color: #c00;
-	background-color: #fae5e5;
-	border-color: #c00
-}
-
-body#pagePrenotazioni article>section form #boxFormFeedback.error a {
-	color: #c00
-}
-
-body#pagePrenotazioni.it article>section form fieldset.submit a.button {
-	background: url(../img/buttons/submit_it.png) no-repeat left top
-}
-
-body#pagePrenotazioni.en article>section form fieldset.submit a.button {
-	background: url(../img/buttons/submit_en.png) no-repeat left top
-}
-
-body#pagePrenotazioni.de article>section form fieldset.submit a.button {
-	background: url(../img/buttons/submit_de.png) no-repeat left top
-}
-
-body#pagePrenotazioni.fr article>section form fieldset.submit a.button {
-	background: url(../img/buttons/submit_fr.png) no-repeat left top
-}
-
-body#pageRegolamento article>section>ul li {
-	padding-left: 24px;
-	margin-top: 25px;
-	background: url(../img/icons/check.png) no-repeat 2px 3px
-}
-
-body#pageRegolamento article>section>ul li strong {
-	font-weight: bold
-}
-
-body#pageRegolamento article>section>aside {
-	width: 320px;
-	margin-left: 75px;
-	padding: 5px;
-	float: right;
-	background: url(../img/grid.gif) repeat 50% 50%
-}
-
-body#pageRegolamento article>section>aside>div {
-	padding: 10px 20px;
-	background: #fafafa
-}
-
-body#pageRegolamento article>section>aside>div h3 {
-	margin: 15px 10px 12px 0;
-	padding-bottom: 6px;
-	font-size: 16px;
-	font-weight: bold;
-	line-height: 1em;
-	color: #000;
-	border-bottom: 1px solid #e4e4e4
-}
-
-body#pageRegolamento article>section>aside>div ul li {
-	margin-bottom: 10px;
-	font-size: 12px;
-	line-height: 14px
-}
-
-body#pageRegolamento article>section>aside>div ul li strong {
 	font-weight: bold
 }
 
@@ -1758,67 +1408,6 @@ body#pageGallery article > section > figure > img {
 	body#pagePrezzi article>section table tbody td {
 		padding: 15px 10px;
 		font-size: 20px
-	}
-	body#pagePrenotazioni article>section>p {
-		font-size: 15px;
-		line-height: 1em;
-		text-align: center;
-		display: none
-	}
-	body#pagePrenotazioni article>section>p.onlymobile {
-		display: block
-	}
-	body#pagePrenotazioni article>section>p>a {
-		width: 80%;
-		margin: 20px auto;
-		padding: 20px 15px;
-		font-size: 24px;
-		display: block;
-		font-weight: bold;
-		text-align: center;
-		text-decoration: none;
-		text-shadow: 0 1px 1px #f4f4f4;
-		color: #555;
-		border: 1px solid #ccc;
-		background-color: #9f9f9f;
-		background-repeat: no-repeat;
-		background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#d9d9d9),
-			color-stop(0.5, #cacaca), to(#9f9f9f));
-		background-image: -webkit-linear-gradient(#d9d9d9, color-stop(0.5, #cacaca),
-			#9f9f9f);
-		background-image: -moz-linear-gradient(#d9d9d9, color-stop(#cacaca, 0.5),
-			#9f9f9f);
-		background-image: -ms-linear-gradient(#d9d9d9, color-stop(#cacaca, 0.5),
-			#9f9f9f);
-		background-image: -o-linear-gradient(#d9d9d9, color-stop(#cacaca, 0.5),
-			#9f9f9f);
-		background-image: linear-gradient(#d9d9d9, color-stop(#cacaca, 0.5),
-			#9f9f9f);
-		-webkit-border-radius: 8px;
-		-webkit-background-clip: padding-box;
-		-moz-border-radius: 8px;
-		-moz-background-clip: padding-box;
-		border-radius: 8px;
-		background-clip: padding-box
-	}
-	body#pagePrenotazioni article>section form {
-		display: none
-	}
-	body#pageRegolamento article>section {
-		display: -webkit-box;
-		-webkit-box-orient: vertical;
-		display: -moz-box;
-		-moz-box-orient: vertical;
-		display: box;
-		box-orient: vertical
-	}
-	body#pageRegolamento article>section>aside {
-		width: auto;
-		margin: 20px auto;
-		float: none;
-		-webkit-box-ordinal-group: 2;
-		-moz-box-ordinal-group: 2;
-		box-ordinal-group: 2
 	}
 	body#pageContatti article>section aside {
 		margin: 0 auto 10px;
@@ -2295,26 +1884,6 @@ body#pageGallery article > section > figure > img {
 	}
 	body#pagePrezzi article>section table {
 		width: 90%
-	}
-	body#pagePrenotazioni article>section form fieldset .field table.rooms th
-		{
-		width: 80px;
-		overflow: hidden
-	}
-	body#pagePrenotazioni article>section form fieldset .field table.rooms td label,body#pagePrenotazioni article>section form fieldset .field table.rooms td input
-		{
-		margin-left: 15px
-	}
-	body#pagePrenotazioni article>section form fieldset .field table.rooms td select
-		{
-		width: 140px
-	}
-	body#pagePrenotazioni article>section form fieldset.submit {
-		padding-left: 40px
-	}
-	body#pagePrenotazioni article>section form #boxFormFeedback {
-		left: 200px;
-		width: 320px
 	}
 	body#pageContatti article>section aside {
 		width: 300px;
