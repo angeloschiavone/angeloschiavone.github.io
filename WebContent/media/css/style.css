@@ -139,6 +139,7 @@ body>header>div nav#menu ul li {
 body>header>div nav#menu ul li>a {
 	display: block;
 	float: left;
+	font-weight:bold;
 	padding: 8px 0 0;
 	height: 27px;
 	font-family: Helvetica, "Segoe UI", Tahoma, sans-serif;
@@ -198,6 +199,7 @@ body>header>div nav#lang2 ul li>a {
 	height: 22px;
 	font-size: medium;
 	font-family: Helvetica, "Segoe UI", Tahoma, sans-serif;
+	font-weight:bold;
 	color: rgba(50, 50, 50, 0.9);
 	text-decoration: none;
 	text-shadow: -1px 0 rgba(200, 200, 200, 0.5), 0 1px
@@ -263,9 +265,7 @@ body>header>div nav#lang ul li>a span {
 	transition: border-bottom-color .3s linear
 }
 
-body>header>div nav#lang ul li>a:hover span {
-	border-bottom-color: #fff !important
-}
+ 
 
 body>header>em.backimage {
 	position: absolute;
@@ -353,22 +353,16 @@ body>header>div nav#lang ul li.es a {
 	background-position: 4px -70px
 }
 
-body.it>header>div nav#lang ul li.it a span,body.en>header>div nav#lang ul li.en a span,body.de>header>div nav#lang ul li.de a span,body.fr>header>div nav#lang ul li.fr a span
-	{
-	border-bottom-color: rgba(50, 50, 50, 0.9);
-	border-bottom-color: rgba(255, 255, 255, 0.6)
-}
+ 
 
 body.it>header>div nav#lang2 ul li.it2 a span,body.en>header>div nav#lang2 ul li.en2 a span,body.de>header>div nav#lang2 ul li.de2 a span,body.fr>header>div nav#lang2 ul li.fr2 a span,body.es>header>div nav#lang2 ul li.es2 a span
 	{
 	border-bottom-color: rgba(50, 50, 50, 0.9);
-	border-bottom-color: rgba(150, 150, 150, 0.6)
 }
 
-body>header>div nav#menu.casa ul li.casa a span,body>header>div nav#menu.camere ul li.camere a span,body>header>div nav#menu.servizi ul li.servizi a span,body>header>div nav#menu.prezzi ul li.prezzi a span,body>header>div nav#menu.prenotazioni ul li.prenotazioni a span,body>header>div nav#menu.contatti ul li.contatti a span
+body>header>div nav#menu.casa ul li.casa a span,body>header>div nav#menu.camere ul li.camere a span,body>header>div nav#menu.servizi ul li.servizi a span,body>header>div nav#menu.prezzi ul li.prezzi a span,body>header>div nav#menu.contatti ul li.contatti a span
 	{
-	border-bottom-color: #fff;
-	border-bottom-color: rgba(255, 255, 255, 0.8)
+	border-bottom-color: rgba(255, 255, 255, 0.8);
 }
 
 body>article {
@@ -1134,6 +1128,9 @@ body#pageGallery article > section > figure > img {
 	/*language menu bianco nella home su mobile perchè sfondo è nero*/
 	body#pageHomepage>header>div nav#lang2 ul li>a {
 		color: rgba(250, 250, 250, 0.9);
+	}			body.it>header>div nav#lang2 ul li.it2 a span,body.en>header>div nav#lang2 ul li.en2 a span,body.de>header>div nav#lang2 ul li.de2 a span,body.fr>header>div nav#lang2 ul li.fr2 a span,body.es>header>div nav#lang2 ul li.es2 a span
+	{
+		border-bottom-color: rgba(250, 250, 250, 0.9);
 	}
 	body#pageHomepage>header>div>a {
 		background-image: url(../img/modified/luna4_white.png);
@@ -1164,6 +1161,10 @@ body#pageGallery article > section > figure > img {
 		display: inline-block;
 		position: relative;
 		vertical-align: middle;
+	font-family: Helvetica, "Segoe UI", Tahoma, sans-serif;
+				font-weight:bold;
+	font-size:larger;
+	text-decoration: none;
 		top: 10px;
 		right: 10px;
 		color: white;
@@ -1323,9 +1324,9 @@ body#pageGallery article > section > figure > img {
 		background: url(../img/photos/homepage/iphone4_portrait.jpg) no-repeat
 			50% 50%;
 		background-attachment: fixed;
-		-webkit-background-size: 320px 480px;
-		-moz-background-size: 320px 480px;
-		background-size: 320px 480px
+		-webkit-background-size: 100% 100%;
+		-moz-background-size: 100% 100%;
+		background-size: 100% 100%;
 	}
 	body#pageHomepage>header {
 		position: absolute;
@@ -1536,9 +1537,6 @@ body#pageGallery article > section > figure > img {
 	body.it>header>div nav#menu ul li.prezzi a {
 		background-position: -610px -10px
 	}
-	body.it>header>div nav#menu ul li.prenotazioni a {
-		background-position: -810px -10px
-	}
 	body.it>header>div nav#menu ul li.contatti a {
 		background-position: -1010px -10px
 	}
@@ -1553,9 +1551,6 @@ body#pageGallery article > section > figure > img {
 	}
 	body.en>header>div nav#menu ul li.prezzi a {
 		background-position: -610px -50px
-	}
-	body.en>header>div nav#menu ul li.prenotazioni a {
-		background-position: -810px -50px
 	}
 	body.en>header>div nav#menu ul li.contatti a {
 		background-position: -1010px -50px
@@ -1572,9 +1567,6 @@ body#pageGallery article > section > figure > img {
 	body.de>header>div nav#menu ul li.prezzi a {
 		background-position: -610px -90px
 	}
-	body.de>header>div nav#menu ul li.prenotazioni a {
-		background-position: -810px -90px
-	}
 	body.de>header>div nav#menu ul li.contatti a {
 		background-position: -1010px -90px
 	}
@@ -1589,9 +1581,6 @@ body#pageGallery article > section > figure > img {
 	}
 	body.fr>header>div nav#menu ul li.prezzi a {
 		background-position: -610px -130px
-	}
-	body.fr>header>div nav#menu ul li.prenotazioni a {
-		background-position: -810px -130px
 	}
 	body.fr>header>div nav#menu ul li.contatti a {
 		background-position: -1010px -130px
@@ -1613,9 +1602,9 @@ body#pageGallery article > section > figure > img {
 	}
 	body#pageHomepage {
 		background-image: url(../img/photos/homepage/iphone4_portrait.jpg);
-		-webkit-background-size: 320px 480px;
-		-moz-background-size: 320px 480px;
-		background-size: 320px 480px
+		-webkit-background-size:  100% 100%;;
+		-moz-background-size:  100% 100%;;
+		background-size:  100% 100%;
 	}
 	body#pageHomepage>article>aside>div p#txt1 {
 		top: 280px;
@@ -1648,9 +1637,9 @@ body#pageGallery article > section > figure > img {
 	}
 	body#pageHomepage {
 		background-image: url(../img/photos/homepage/iphone4_landscape.jpg);
-		-webkit-background-size: 480px 320px;
-		-moz-background-size: 480px 320px;
-		background-size: 480px 320px
+-webkit-background-size:  100% 100%;;
+		-moz-background-size:  100% 100%;;
+		background-size:  100% 100%;
 	}
 	body#pageHomepage>header>div {
 		padding-top: 80px
@@ -1908,12 +1897,17 @@ body#pageGallery article > section > figure > img {
 	(orientation:portrait) {
 	body#pageHomepage {
 		background: url(../img/photos/homepage/iphone5_portrait.jpg) no-repeat 50% 50%;
-		-webkit-background-size: 320px 568px;
-		-moz-background-size: 320px 568px;
-		background-size: 320px 568px
+			background-attachment: fixed;
+-webkit-background-size:  100% 100%;;
+		-moz-background-size:  100% 100%;;
+		background-size:  100% 100%;
 	}
 	body#pageHomepage>header>div nav#lang2 ul li>a {
 		color: rgba(250, 250, 250, 0.9);
+	}
+			body.it>header>div nav#lang2 ul li.it2 a span,body.en>header>div nav#lang2 ul li.en2 a span,body.de>header>div nav#lang2 ul li.de2 a span,body.fr>header>div nav#lang2 ul li.fr2 a span,body.es>header>div nav#lang2 ul li.es2 a span
+	{
+		border-bottom-color: rgba(250, 250, 250, 0.9);
 	}
 }
 /*iphone5 landscape */
@@ -1923,12 +1917,16 @@ and (max-device-width : 568px)
 and (orientation:landscape) {
 	body#pageHomepage {
 		background: url(../img/photos/homepage/iphone5_landscape.jpg) no-repeat 50% 50%;
-		-webkit-background-size: 568px 320px;
-		-moz-background-size: 568px 320px;
-		background-size: 568px 320px 
+-webkit-background-size:  100% 100%;
+		-moz-background-size:  100% 100%;;
+		background-size:  100% 100%;
 	}
 	body#pageHomepage>header>div nav#lang2 ul li>a {
 		color: rgba(250, 250, 250, 0.9);
+	}
+			body.it>header>div nav#lang2 ul li.it2 a span,body.en>header>div nav#lang2 ul li.en2 a span,body.de>header>div nav#lang2 ul li.de2 a span,body.fr>header>div nav#lang2 ul li.fr2 a span,body.es>header>div nav#lang2 ul li.es2 a span
+	{
+		border-bottom-color: rgba(250, 250, 250, 0.9);
 	}
 }
 
@@ -1939,12 +1937,16 @@ and (max-device-width : 667px)
 and (orientation:portrait) {
 	body#pageHomepage {
 		background: url(../img/photos/homepage/iphone6_portrait.jpg) no-repeat 50% 50%;
-		-webkit-background-size: 375px 667px ;
-		-moz-background-size: 375px 667px ;
-		background-size: 375px 667px ; 
+-webkit-background-size:  100% 100%;;
+		-moz-background-size:  100% 100%;;
+		background-size:  100% 100%;
 	}
 	body#pageHomepage>header>div nav#lang2 ul li>a {
 		color: rgba(250, 250, 250, 0.9);
+	}
+			body.it>header>div nav#lang2 ul li.it2 a span,body.en>header>div nav#lang2 ul li.en2 a span,body.de>header>div nav#lang2 ul li.de2 a span,body.fr>header>div nav#lang2 ul li.fr2 a span,body.es>header>div nav#lang2 ul li.es2 a span
+	{
+		border-bottom-color: rgba(250, 250, 250, 0.9);
 	}
 }
 
@@ -1956,30 +1958,39 @@ and (max-device-width : 640px)
 and (orientation:portrait) {
 	body#pageHomepage {
 		background: url(../img/photos/homepage/iphone6_portrait.jpg) no-repeat 50% 50%;
-		-webkit-background-size: 360px 640px ;
-		-moz-background-size: 360px 640px ;
-		background-size: 360px 640px ; 
+-webkit-background-size:  100% 100%;;
+		-moz-background-size:  100% 100%;;
+		background-size:  100% 100%;
 	}
 	body#pageHomepage>header>div nav#lang2 ul li>a {
 		color: rgba(250, 250, 250, 0.9);
+	}
+				body.it>header>div nav#lang2 ul li.it2 a span,body.en>header>div nav#lang2 ul li.en2 a span,body.de>header>div nav#lang2 ul li.de2 a span,body.fr>header>div nav#lang2 ul li.fr2 a span,body.es>header>div nav#lang2 ul li.es2 a span
+	{
+		border-bottom-color: rgba(250, 250, 250, 0.9);
 	}
 }
 
+ 
 /*galaxy s/s2/w portrait */
 @media only screen 
-and (min-device-width : 320px) 
-and (max-device-width : 534px) 
-and (orientation:portrait) {
+and (min-device-width : 480px) 
+and (max-device-width : 800px) 
+and (orientation : portrait) {
 	body#pageHomepage {
 		background: url(../img/photos/homepage/iphone5_portrait.jpg) no-repeat 50% 50%;
-		-webkit-background-size: 320px 534px ;
-		-moz-background-size: 320px 534px ;
-		background-size: 320px 534px ; 
+-webkit-background-size:  100% 100%;;
+		-moz-background-size:  100% 100%;;
+		background-size:  100% 100%;
 	}
 	body#pageHomepage>header>div nav#lang2 ul li>a {
 		color: rgba(250, 250, 250, 0.9);
 	}
-}
+	body.it>header>div nav#lang2 ul li.it2 a span,body.en>header>div nav#lang2 ul li.en2 a span,body.de>header>div nav#lang2 ul li.de2 a span,body.fr>header>div nav#lang2 ul li.fr2 a span,body.es>header>div nav#lang2 ul li.es2 a span
+	{
+		border-bottom-color: rgba(250, 250, 250, 0.9);
+	}
+}  
 
 /*iphone6 landscape */
 @media only screen 
@@ -1988,12 +1999,15 @@ and (max-device-width : 667px)
 and (orientation:landscape) {
 	body#pageHomepage {
 		background: url(../img/photos/homepage/iphone6_landscape.jpg) no-repeat 50% 50%;
-		-webkit-background-size: 667px 375px;
-		-moz-background-size: 667px 375px;
-		background-size: 667px 375px;
+-webkit-background-size:  100% 100%;;
+		-moz-background-size:  100% 100%;;
+		background-size:  100% 100%;
 	}
 	body#pageHomepage>header>div nav#lang2 ul li>a {
 		color: rgba(250, 250, 250, 0.9);
+	}			body.it>header>div nav#lang2 ul li.it2 a span,body.en>header>div nav#lang2 ul li.en2 a span,body.de>header>div nav#lang2 ul li.de2 a span,body.fr>header>div nav#lang2 ul li.fr2 a span,body.es>header>div nav#lang2 ul li.es2 a span
+	{
+		border-bottom-color: rgba(250, 250, 250, 0.9);
 	}
 }
 
