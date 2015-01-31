@@ -50,7 +50,7 @@ window.addEvent('domready', function() {
 	}
 
 	/* ==== GOOGLE MAP ==== */
-	if (document.getElement('#pageContatti #gmap')) {
+	if (document.getElement('#pageDovesiamo #gmap')) {
 
 		// map options
 		var mapOptions = {
