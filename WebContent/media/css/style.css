@@ -278,6 +278,11 @@ body#pageContatti>header>em.backimage {
 	background-image: url(../img/photos/headers/header_esterno.jpg)
 }
 
+body#pageDovesiamo>header>em.backimage {
+	background-image: url(../img/photos/headers/header_map.png)
+}
+
+
 body#pageGallery>header>em.backimage {
 	background-image: url(../img/photos/headers/header_esterno.jpg)
 }
@@ -291,6 +296,7 @@ body>header>div nav#menu.casa ul li.casa2 a span,
 body>header>div nav#menu.camere ul li.camere2 a span,
 body>header>div nav#menu.servizi ul li.servizi2 a span,
 body>header>div nav#menu.prezzi ul li.prezzi2 a span,
+body>header>div nav#menu.dovesiamo ul li.dovesiamo2 a span,
 body>header>div nav#menu.contatti ul li.contatti2 a span
 {
 	border-bottom-color: rgba(50, 50, 50, 0.9);
@@ -918,8 +924,79 @@ body#pagePrezzi article>section table tfoot td strong {
 	font-weight: bold
 }
 
+
+body#pageDovesiamo article>section ul li {
+	margin-top: 12px
+}
+body#pageDovesiamo article>section ul li span {
+	display: block;
+	margin-bottom: 2px;
+	font-size: 12px;
+	line-height: 13px;
+	font-weight: bold;
+	color: #999
+}
+
+body#pageDovesiamo article>section ul li strong {
+	display: block;
+	font-size: 16px;
+	line-height: 20px;
+	font-weight: bold
+}
+
+body#pageDovesiamo article>section p {
+	margin-bottom: 8px
+}
+
+body#pageDovesiamo article>section p a {
+	font-weight: bold
+}
+
+body#pageDovesiamo article>section aside {
+	position: relative;
+	margin-left: 75px;
+	margin-bottom: 30px;
+	padding: 5px;
+	display: block;
+	float: right;
+	background: url(../img/grid.gif) repeat 50% 50%
+}
+
+body#pageDovesiamo article>section aside:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0
+}
+
+body#pageDovesiamo article>section aside>img {
+	display: block
+}
+
+body#pageDovesiamo article>section #gwrap {
+	width: 890px;
+	margin-top: 30px;
+	margin-bottom: 5px;
+	padding: 5px;
+	display: block;
+	clear: both;
+	background: url(../img/grid.gif) repeat 50% 50%
+}
+
+body#pageDovesiamo article>section #gwrap #gmap {
+	width: 100%;
+	height: 300px;
+	display: block;
+	background: #fafafa
+}
 body#pageContatti article>section ul li {
 	margin-top: 12px
+}
+body#pageContatti article>section #gwrap+a {
+	font-size: 12px;
+	color: #999
 }
 
 body#pageContatti article>section ul li span {
@@ -1055,7 +1132,7 @@ body#pageGallery article>section>figure>img {
 		background-size: 290px 65px
 	}
 
-	/*language menu bianco nella home e prezzi su mobile perchè sfondo è nero -- begin*/
+	/*language menu bianco nella home e prezzi su mobile perchï¿½ sfondo ï¿½ nero -- begin*/
 	body#pageHomepage>header>div nav#lang2 ul li>a {
 		color: rgba(250, 250, 250, 0.9);
 	}
@@ -1078,7 +1155,7 @@ body#pageGallery article>section>figure>img {
 	{
 		border-bottom-color: rgba(250, 250, 250, 0.9);
 	}
-	/*language menu bianco nella home e prezzi su mobile perchè sfondo è nero -- ends*/
+	/*language menu bianco nella home e prezzi su mobile perchï¿½ sfondo ï¿½ nero -- ends*/
 	
 	
 
