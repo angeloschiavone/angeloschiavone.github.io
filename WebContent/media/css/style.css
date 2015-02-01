@@ -485,34 +485,15 @@ body>footer>div p.socials>a:hover {
 body>footer>div p.socials>a.twitter {
 	background-image: url(../img/social/twitter.png)
 }
-
+body>footer>div p.socials>a.googleplus {
+	background-image: url(../img/social/googleplus.png)
+}
 body>footer>div p.socials>a.facebook {
 	background-image: url(../img/social/facebook.png)
 }
 
 body>footer>div p.socials>a+a {
 	margin-left: 5px
-}
-
-body>footer>div p.credits {
-	position: absolute;
-	bottom: 20px;
-	right: 0
-}
-
-body>footer>div p.credits>a {
-	display: inline-block;
-	padding: 2px 3px;
-	font-size: 12px;
-	line-height: 16px;
-	color: #666;
-	background-color: #f4f4f4;
-	text-decoration: none
-}
-
-body>footer>div p.credits>a:hover {
-	color: #fff;
-	background-color: #333
 }
 
 body#pageHomepage {
@@ -1340,6 +1321,9 @@ body#pageGallery article>section>figure>img {
 	}
 	body>footer>div p.socials>a.facebook {
 		background-image: url(../img/social/facebook@2.png)
+	}
+	body>footer>div p.socials>a.googleplus {
+		background-image: url(../img/social/googleplus@2.png)
 	}
 	body>footer>div p.credits {
 		position: absolute;
