@@ -112,7 +112,7 @@ body>header>div>a {
 	height: 95px;
 	text-indent: -9999px;
 	overflow: hidden;
-	background: url(../img/modified/logo_nero_small.png) no-repeat 0 0;
+	background: url(../img/modified/logobs.png) no-repeat 0 0;
 }
 
 body>header>div nav#menu {
@@ -1125,7 +1125,7 @@ body#pageGallery article>section>figure>img {
 		left: 15px;
 		width: 290px;
 		height: 65px;
-		background-image: url(../img/modified/logo_nero_small.png);
+		background-image: url(../img/modified/logobs.png);
 		/*background-image: url(../img/logo_orizzontale@2.png);*/
 		-webkit-background-size: 290px 65px;
 		-moz-background-size: 290px 65px;
@@ -1160,7 +1160,7 @@ body#pageGallery article>section>figure>img {
 	
 
 	body#pageHomepage>header>div>a {
-		background-image: url(../img/modified/logo_bianco_small.png);
+		background-image: url(../img/modified/logows.png);
 	}
 	body>header>div nav#menu {
 		position: relative;
