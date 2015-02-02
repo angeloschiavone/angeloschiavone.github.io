@@ -24,11 +24,21 @@ ol,ul,li {
 	list-style: none;
 }
 
-
-body#pageDovesiamo ol>li  {
+body#pageDovesiamo ol>li {
 	list-style: decimal;
 }
 
+body#pageDovesiamo article>section aside iframe {
+	width: 100%
+}
+
+body#pageDovesiamo article>section aside iframe {
+	min-height: 300px;
+}
+
+body#pageDovesiamo article>section aside p {
+	max-width: 480px;
+}
 
 html {
 	-webkit-text-size-adjust: 100%;
@@ -185,10 +195,10 @@ body>header>div nav#lang2 {
 	height: 20px
 }
 
-  body > header > div > nav#lang2 ul li:first-child {
-    background: none;
-  }
-  
+body>header>div>nav#lang2 ul li:first-child {
+	background: none;
+}
+
 body>header>div nav#lang2 ul li {
 	height: 24px;
 	padding: 5px 5px 5px 5px;
@@ -210,7 +220,7 @@ body>header>div nav#lang2 ul li>a {
 		rgba(200, 200, 200, 0.5);
 	text-decoration: none;
 }
- 
+
 body>header>div nav#lang2 ul li>a span {
 	width: auto;
 	height: 20px;
@@ -288,7 +298,6 @@ body#pageDovesiamo>header>em.backimage {
 	background-image: url(../img/photos/headers/header_map.jpg)
 }
 
-
 body#pageGallery>header>em.backimage {
 	background-image: url(../img/photos/headers/header_esterno.jpg)
 }
@@ -299,34 +308,29 @@ body.it>header>div nav#lang2 ul li.it2 a span,body.en>header>div nav#lang2 ul li
 }
 
 /*          pageContatti        */
-body#pageContatti article > section ul li {
-  margin-top: 12px;
-}
-body#pageContatti article > section ul li span {
-  display: block;
-  margin-bottom: 2px;
-  font-size: 12px;
-  line-height: 13px;
-  font-weight: bold;
-  color: #999999;
-}
-body#pageContatti article > section ul li strong {
-  display: block;
-  font-size: 16px;
-  line-height: 20px;
-  font-weight: bold;
-  /*color: #222222;*/
+body#pageContatti article>section ul li {
+	margin-top: 12px;
 }
 
+body#pageContatti article>section ul li span {
+	display: block;
+	margin-bottom: 2px;
+	font-size: 12px;
+	line-height: 13px;
+	font-weight: bold;
+	color: #999999;
+}
 
+body#pageContatti article>section ul li strong {
+	display: block;
+	font-size: 16px;
+	line-height: 20px;
+	font-weight: bold;
+	/*color: #222222;*/
+}
 
-body>header>div nav#menu.casa ul li.casa2 a span,
-body>header>div nav#menu.camere ul li.camere2 a span,
-body>header>div nav#menu.servizi ul li.servizi2 a span,
-body>header>div nav#menu.prezzi ul li.prezzi2 a span,
-body>header>div nav#menu.dovesiamo ul li.dovesiamo2 a span,
-body>header>div nav#menu.contatti ul li.contatti2 a span
-{
+body>header>div nav#menu.casa ul li.casa2 a span,body>header>div nav#menu.camere ul li.camere2 a span,body>header>div nav#menu.servizi ul li.servizi2 a span,body>header>div nav#menu.prezzi ul li.prezzi2 a span,body>header>div nav#menu.dovesiamo ul li.dovesiamo2 a span,body>header>div nav#menu.contatti ul li.contatti2 a span
+	{
 	border-bottom-color: rgba(50, 50, 50, 0.9);
 }
 
@@ -513,9 +517,11 @@ body>footer>div p.socials>a:hover {
 body>footer>div p.socials>a.twitter {
 	background-image: url(../img/social/twitter.png)
 }
+
 body>footer>div p.socials>a.googleplus {
 	background-image: url(../img/social/googleplus.png)
 }
+
 body>footer>div p.socials>a.facebook {
 	background-image: url(../img/social/facebook.png)
 }
@@ -937,8 +943,6 @@ body#pageDovesiamo article>section ul li {
 	margin-top: 12px
 }
 
-
-
 body#pageDovesiamo article>section p {
 	margin-bottom: 8px
 }
@@ -1017,7 +1021,6 @@ body#pageDovesiamo article>section aside:after {
 	clear: both;
 	height: 0
 }
- 
 
 body#pageDovesiamo article>section #gwrap #gmap {
 	width: 100%;
@@ -1025,8 +1028,6 @@ body#pageDovesiamo article>section #gwrap #gmap {
 	display: block;
 	background: #fafafa
 }
-
- 
 
 body#pageGallery article>section>figure {
 	padding: 0px 5px;
@@ -1096,29 +1097,18 @@ body#pageGallery article>section>figure>img {
 	body#pageHomepage>header>div nav#lang2 ul li>a {
 		color: rgba(250, 250, 250, 0.9);
 	}
-	body.it#pageHomepage>header>div nav#lang2 ul li.it2 a span,
-	body.en#pageHomepage>header>div nav#lang2 ul li.en2 a span,
-	body.de#pageHomepage>header>div nav#lang2 ul li.de2 a span,
-	body.fr#pageHomepage>header>div nav#lang2 ul li.fr2 a span,
-	body.es#pageHomepage>header>div nav#lang2 ul li.es2 a span
-	{
+	body.it#pageHomepage>header>div nav#lang2 ul li.it2 a span,body.en#pageHomepage>header>div nav#lang2 ul li.en2 a span,body.de#pageHomepage>header>div nav#lang2 ul li.de2 a span,body.fr#pageHomepage>header>div nav#lang2 ul li.fr2 a span,body.es#pageHomepage>header>div nav#lang2 ul li.es2 a span
+		{
 		border-bottom-color: rgba(250, 250, 250, 0.9);
 	}
 	body#pagePrezzi>header>div nav#lang2 ul li>a {
 		color: rgba(250, 250, 250, 0.9);
 	}
-	body.it#pagePrezzi>header>div nav#lang2 ul li.it2 a span,
-	body.en#pagePrezzi>header>div nav#lang2 ul li.en2 a span,
-	body.de#pagePrezzi>header>div nav#lang2 ul li.de2 a span,
-	body.fr#pagePrezzi>header>div nav#lang2 ul li.fr2 a span,
-	body.es#pagePrezzi>header>div nav#lang2 ul li.es2 a span
-	{
+	body.it#pagePrezzi>header>div nav#lang2 ul li.it2 a span,body.en#pagePrezzi>header>div nav#lang2 ul li.en2 a span,body.de#pagePrezzi>header>div nav#lang2 ul li.de2 a span,body.fr#pagePrezzi>header>div nav#lang2 ul li.fr2 a span,body.es#pagePrezzi>header>div nav#lang2 ul li.es2 a span
+		{
 		border-bottom-color: rgba(250, 250, 250, 0.9);
 	}
 	/*language menu bianco nella home e prezzi su mobile perch� sfondo � nero -- ends*/
-	
-	
-
 	body#pageHomepage>header>div>a {
 		background-image: url(../img/modified/logows.png);
 	}
