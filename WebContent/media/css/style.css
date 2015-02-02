@@ -298,6 +298,28 @@ body.it>header>div nav#lang2 ul li.it2 a span,body.en>header>div nav#lang2 ul li
 	border-bottom-color: rgba(50, 50, 50, 0.9);
 }
 
+/*          pageContatti        */
+body#pageContatti article > section ul li {
+  margin-top: 12px;
+}
+body#pageContatti article > section ul li span {
+  display: block;
+  margin-bottom: 2px;
+  font-size: 12px;
+  line-height: 13px;
+  font-weight: bold;
+  color: #999999;
+}
+body#pageContatti article > section ul li strong {
+  display: block;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: bold;
+  /*color: #222222;*/
+}
+
+
+
 body>header>div nav#menu.casa ul li.casa2 a span,
 body>header>div nav#menu.camere ul li.camere2 a span,
 body>header>div nav#menu.servizi ul li.servizi2 a span,
@@ -911,25 +933,11 @@ body#pagePrezzi article>section table tfoot td strong {
 	font-weight: bold
 }
 
-
 body#pageDovesiamo article>section ul li {
 	margin-top: 12px
 }
-body#pageDovesiamo article>section ul li span {
-	display: block;
-	margin-bottom: 2px;
-	font-size: 12px;
-	line-height: 13px;
-	font-weight: bold;
-	color: #999
-}
 
-body#pageDovesiamo article>section ul li strong {
-	display: block;
-	font-size: 16px;
-	line-height: 20px;
-	font-weight: bold
-}
+
 
 body#pageDovesiamo article>section p {
 	margin-bottom: 8px
@@ -1401,10 +1409,10 @@ body#pageGallery article>section>figure>img {
 	body#pageDovesiamo article>section aside img {
 		width: 100%
 	}
-	body#pageDovesiamo article>section ul li span {
+	body#pageContatti article>section ul li span {
 		color: #222
 	}
-	body#pageDovesiamo article>section ul li strong a {
+	body#pageContatti article>section ul li strong a {
 		display: inline-block;
 		width: auto;
 		margin: 0 auto 0 0;
@@ -1438,7 +1446,7 @@ body#pageGallery article>section>figure>img {
 		border-radius: 8px;
 		background-clip: padding-box
 	}
-	body#pageDovesiamo article>section ul li:first-child strong a {
+	body#pageContatti article>section ul li:first-child strong a {
 		font-size: 16px
 	}
 	body#pageDovesiamo article>section #gwrap {
