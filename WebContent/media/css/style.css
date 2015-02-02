@@ -285,7 +285,7 @@ body#pageContatti>header>em.backimage {
 }
 
 body#pageDovesiamo>header>em.backimage {
-	background-image: url(../img/photos/headers/header_map.png)
+	background-image: url(../img/photos/headers/header_map.jpg)
 }
 
 
@@ -939,16 +939,6 @@ body#pageDovesiamo article>section p a {
 	font-weight: bold
 }
 
-body#pageDovesiamo article>section aside {
-	position: relative;
-	margin-left: 75px;
-	margin-bottom: 30px;
-	padding: 5px;
-	display: block;
-	float: right;
-	background: url(../img/grid.gif) repeat 50% 50%
-}
-
 body#pageDovesiamo article>section aside:after {
 	visibility: hidden;
 	display: block;
@@ -972,21 +962,12 @@ body#pageDovesiamo article>section #gwrap {
 	background: url(../img/grid.gif) repeat 50% 50%
 }
 
-body#pageDovesiamo article>section #gwrap #gmap {
-	width: 100%;
-	height: 300px;
-	display: block;
-	background: #fafafa
-}
-body#pageContatti article>section ul li {
-	margin-top: 12px
-}
-body#pageContatti article>section #gwrap+a {
+body#pageDovesiamo article>section #gwrap+a {
 	font-size: 12px;
 	color: #999
 }
 
-body#pageContatti article>section ul li span {
+body#pageDovesiamo article>section ul li span {
 	display: block;
 	margin-bottom: 2px;
 	font-size: 12px;
@@ -995,22 +976,22 @@ body#pageContatti article>section ul li span {
 	color: #999
 }
 
-body#pageContatti article>section ul li strong {
+body#pageDovesiamo article>section ul li strong {
 	display: block;
 	font-size: 16px;
 	line-height: 20px;
 	font-weight: bold
 }
 
-body#pageContatti article>section p {
+body#pageDovesiamo article>section p {
 	margin-bottom: 8px
 }
 
-body#pageContatti article>section p a {
+body#pageDovesiamo article>section p a {
 	font-weight: bold
 }
 
-body#pageContatti article>section aside {
+body#pageDovesiamo article>section aside {
 	position: relative;
 	margin-left: 75px;
 	margin-bottom: 30px;
@@ -1020,7 +1001,7 @@ body#pageContatti article>section aside {
 	background: url(../img/grid.gif) repeat 50% 50%
 }
 
-body#pageContatti article>section aside:after {
+body#pageDovesiamo article>section aside:after {
 	visibility: hidden;
 	display: block;
 	font-size: 0;
@@ -1028,32 +1009,16 @@ body#pageContatti article>section aside:after {
 	clear: both;
 	height: 0
 }
+ 
 
-body#pageContatti article>section aside>img {
-	display: block
-}
-
-body#pageContatti article>section #gwrap {
-	width: 890px;
-	margin-top: 30px;
-	margin-bottom: 5px;
-	padding: 5px;
-	display: block;
-	clear: both;
-	background: url(../img/grid.gif) repeat 50% 50%
-}
-
-body#pageContatti article>section #gwrap #gmap {
+body#pageDovesiamo article>section #gwrap #gmap {
 	width: 100%;
 	height: 300px;
 	display: block;
 	background: #fafafa
 }
 
-body#pageContatti article>section #gwrap+a {
-	font-size: 12px;
-	color: #999
-}
+ 
 
 body#pageGallery article>section>figure {
 	padding: 0px 5px;
@@ -1427,19 +1392,19 @@ body#pageGallery article>section>figure>img {
 		padding: 15px 10px;
 		font-size: 20px
 	}
-	body#pageContatti article>section aside {
+	body#pageDovesiamo article>section aside {
 		margin: 0 auto 10px;
 		float: none;
 		width: 96%;
 		padding: 2%
 	}
-	body#pageContatti article>section aside img {
+	body#pageDovesiamo article>section aside img {
 		width: 100%
 	}
-	body#pageContatti article>section ul li span {
+	body#pageDovesiamo article>section ul li span {
 		color: #222
 	}
-	body#pageContatti article>section ul li strong a {
+	body#pageDovesiamo article>section ul li strong a {
 		display: inline-block;
 		width: auto;
 		margin: 0 auto 0 0;
@@ -1473,13 +1438,13 @@ body#pageGallery article>section>figure>img {
 		border-radius: 8px;
 		background-clip: padding-box
 	}
-	body#pageContatti article>section ul li:first-child strong a {
+	body#pageDovesiamo article>section ul li:first-child strong a {
 		font-size: 16px
 	}
-	body#pageContatti article>section #gwrap {
+	body#pageDovesiamo article>section #gwrap {
 		display: none
 	}
-	body#pageContatti article>section #gwrap+a {
+	body#pageDovesiamo article>section #gwrap+a {
 		display: block;
 		margin: 20px auto 10px;
 		padding-top: 20px;
@@ -1487,60 +1452,6 @@ body#pageGallery article>section>figure>img {
 		font-weight: bold;
 		color: #000;
 		border-top: 1px dotted #e4e4e4
-	}
-	body#pageCredits article>section {
-		height: auto;
-		text-align: center
-	}
-	body#pageCredits article>section>hgroup {
-		text-align: left
-	}
-	body#pageCredits article>section>img {
-		position: relative;
-		top: auto;
-		left: auto;
-		max-width: 100%;
-		height: auto
-	}
-	body#pageCredits article>section>ul {
-		position: relative;
-		top: auto;
-		right: auto;
-		width: 195px;
-		margin: 20px auto 0
-	}
-	body#pageCredits article>section>ul li {
-		position: relative;
-		width: 195px;
-		height: auto;
-		margin-bottom: 30px;
-		padding-left: 0;
-		text-align: center
-	}
-	body#pageCredits article>section>ul li>span {
-		position: relative;
-		top: auto;
-		left: auto;
-		display: block;
-		background-image: url(../img/credits/credits_labels@2.png);
-		background-size: 195px 390px
-	}
-	body#pageCredits article>section>ul li>p,body#pageCredits article>section>ul li>a img
-		{
-		position: relative;
-		left: auto;
-		margin-top: 10px
-	}
-	body#pageCredits article>section>ul li#boxAW>a img,body#pageCredits article>section>ul li#boxCD>a img,body#pageCredits article>section>ul li#boxGHS>a img
-		{
-		top: auto
-	}
-	body#pageCredits article>section>ul li#boxBV {
-		margin-top: 0
-	}
-	body#pageCredits article>section>ul li#boxBV>p {
-		top: auto;
-		font-size: 15px
 	}
 }
 
@@ -1686,7 +1597,7 @@ body#pageGallery article>section>figure>img {
 	body#pageCamere article>section aside>ul li {
 		margin-left: 15px
 	}
-	body#pageContatti article>section #gwrap {
+	body#pageDovesiamo article>section #gwrap {
 		width: 890px
 	}
 }
@@ -1795,22 +1706,19 @@ body#pageGallery article>section>figure>img {
 	body#pagePrezzi article>section table {
 		width: 90%
 	}
-	body#pageContatti article>section aside {
+	body#pageDovesiamo article>section aside {
 		width: 300px;
 		height: 275px;
 		margin-left: 20px
 	}
-	body#pageContatti article>section aside>img {
+	body#pageDovesiamo article>section aside>img {
 		position: absolute;
 		top: 5px;
 		left: -65px;
 		clip: rect(0px, 370px, 275px, 70px)
 	}
-	body#pageContatti article>section #gwrap {
+	body#pageDovesiamo article>section #gwrap {
 		width: 690px
-	}
-	body#pageCredits article>section>img {
-		width: 36%
 	}
 }
 /*iphone5 protrait */
