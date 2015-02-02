@@ -1110,13 +1110,13 @@ body#pageGallery article>section>figure>img {
 	body>header>div>a {
 		top: 25px;
 		left: 15px;
-		width: 290px;
+		width: 188px;
 		height: 65px;
 		background-image: url(../img/modified/logobs.png);
 		/*background-image: url(../img/logo_orizzontale@2.png);*/
-		-webkit-background-size: 290px 65px;
-		-moz-background-size: 290px 65px;
-		background-size: 290px 65px
+		-webkit-background-size: 188px 65px;
+		-moz-background-size: 188px 65px;
+		background-size: 188px 65px
 	}
 
 	/*language menu bianco nella home e prezzi su mobile perch� sfondo � nero -- begin*/
