@@ -24,11 +24,21 @@ ol,ul,li {
 	list-style: none;
 }
 
-
-body#pageDovesiamo ol>li  {
+body#pageDovesiamo ol>li {
 	list-style: decimal;
 }
 
+body#pageDovesiamo article>section aside iframe {
+	width: 100%
+}
+
+body#pageDovesiamo article>section aside iframe {
+	min-height: 300px;
+}
+
+body#pageDovesiamo article>section aside p {
+	max-width: 480px;
+}
 
 html {
 	-webkit-text-size-adjust: 100%;
@@ -185,10 +195,10 @@ body>header>div nav#lang2 {
 	height: 20px
 }
 
-  body > header > div > nav#lang2 ul li:first-child {
-    background: none;
-  }
-  
+body>header>div>nav#lang2 ul li:first-child {
+	background: none;
+}
+
 body>header>div nav#lang2 ul li {
 	height: 24px;
 	padding: 5px 5px 5px 5px;
@@ -210,7 +220,7 @@ body>header>div nav#lang2 ul li>a {
 		rgba(200, 200, 200, 0.5);
 	text-decoration: none;
 }
- 
+
 body>header>div nav#lang2 ul li>a span {
 	width: auto;
 	height: 20px;
@@ -285,9 +295,8 @@ body#pageContatti>header>em.backimage {
 }
 
 body#pageDovesiamo>header>em.backimage {
-	background-image: url(../img/photos/headers/header_map.png)
+	background-image: url(../img/photos/headers/header_map.jpg)
 }
-
 
 body#pageGallery>header>em.backimage {
 	background-image: url(../img/photos/headers/header_esterno.jpg)
@@ -298,13 +307,30 @@ body.it>header>div nav#lang2 ul li.it2 a span,body.en>header>div nav#lang2 ul li
 	border-bottom-color: rgba(50, 50, 50, 0.9);
 }
 
-body>header>div nav#menu.casa ul li.casa2 a span,
-body>header>div nav#menu.camere ul li.camere2 a span,
-body>header>div nav#menu.servizi ul li.servizi2 a span,
-body>header>div nav#menu.prezzi ul li.prezzi2 a span,
-body>header>div nav#menu.dovesiamo ul li.dovesiamo2 a span,
-body>header>div nav#menu.contatti ul li.contatti2 a span
-{
+/*          pageContatti        */
+body#pageContatti article>section ul li {
+	margin-top: 12px;
+}
+
+body#pageContatti article>section ul li span {
+	display: block;
+	margin-bottom: 2px;
+	font-size: 12px;
+	line-height: 13px;
+	font-weight: bold;
+	color: #999999;
+}
+
+body#pageContatti article>section ul li strong {
+	display: block;
+	font-size: 16px;
+	line-height: 20px;
+	font-weight: bold;
+	/*color: #222222;*/
+}
+
+body>header>div nav#menu.casa ul li.casa2 a span,body>header>div nav#menu.camere ul li.camere2 a span,body>header>div nav#menu.servizi ul li.servizi2 a span,body>header>div nav#menu.prezzi ul li.prezzi2 a span,body>header>div nav#menu.dovesiamo ul li.dovesiamo2 a span,body>header>div nav#menu.contatti ul li.contatti2 a span
+	{
 	border-bottom-color: rgba(50, 50, 50, 0.9);
 }
 
@@ -491,9 +517,11 @@ body>footer>div p.socials>a:hover {
 body>footer>div p.socials>a.twitter {
 	background-image: url(../img/social/twitter.png)
 }
+
 body>footer>div p.socials>a.googleplus {
 	background-image: url(../img/social/googleplus.png)
 }
+
 body>footer>div p.socials>a.facebook {
 	background-image: url(../img/social/facebook.png)
 }
@@ -911,10 +939,46 @@ body#pagePrezzi article>section table tfoot td strong {
 	font-weight: bold
 }
 
-
 body#pageDovesiamo article>section ul li {
 	margin-top: 12px
 }
+
+body#pageDovesiamo article>section p {
+	margin-bottom: 8px
+}
+
+body#pageDovesiamo article>section p a {
+	font-weight: bold
+}
+
+body#pageDovesiamo article>section aside:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0
+}
+
+body#pageDovesiamo article>section aside>img {
+	display: block
+}
+
+body#pageDovesiamo article>section #gwrap {
+	width: 890px;
+	margin-top: 30px;
+	margin-bottom: 5px;
+	padding: 5px;
+	display: block;
+	clear: both;
+	background: url(../img/grid.gif) repeat 50% 50%
+}
+
+body#pageDovesiamo article>section #gwrap+a {
+	font-size: 12px;
+	color: #999
+}
+
 body#pageDovesiamo article>section ul li span {
 	display: block;
 	margin-bottom: 2px;
@@ -958,101 +1022,11 @@ body#pageDovesiamo article>section aside:after {
 	height: 0
 }
 
-body#pageDovesiamo article>section aside>img {
-	display: block
-}
-
-body#pageDovesiamo article>section #gwrap {
-	width: 890px;
-	margin-top: 30px;
-	margin-bottom: 5px;
-	padding: 5px;
-	display: block;
-	clear: both;
-	background: url(../img/grid.gif) repeat 50% 50%
-}
-
 body#pageDovesiamo article>section #gwrap #gmap {
 	width: 100%;
 	height: 300px;
 	display: block;
 	background: #fafafa
-}
-body#pageContatti article>section ul li {
-	margin-top: 12px
-}
-body#pageContatti article>section #gwrap+a {
-	font-size: 12px;
-	color: #999
-}
-
-body#pageContatti article>section ul li span {
-	display: block;
-	margin-bottom: 2px;
-	font-size: 12px;
-	line-height: 13px;
-	font-weight: bold;
-	color: #999
-}
-
-body#pageContatti article>section ul li strong {
-	display: block;
-	font-size: 16px;
-	line-height: 20px;
-	font-weight: bold
-}
-
-body#pageContatti article>section p {
-	margin-bottom: 8px
-}
-
-body#pageContatti article>section p a {
-	font-weight: bold
-}
-
-body#pageContatti article>section aside {
-	position: relative;
-	margin-left: 75px;
-	margin-bottom: 30px;
-	padding: 5px;
-	display: block;
-	float: right;
-	background: url(../img/grid.gif) repeat 50% 50%
-}
-
-body#pageContatti article>section aside:after {
-	visibility: hidden;
-	display: block;
-	font-size: 0;
-	content: " ";
-	clear: both;
-	height: 0
-}
-
-body#pageContatti article>section aside>img {
-	display: block
-}
-
-body#pageContatti article>section #gwrap {
-	width: 890px;
-	margin-top: 30px;
-	margin-bottom: 5px;
-	padding: 5px;
-	display: block;
-	clear: both;
-	background: url(../img/grid.gif) repeat 50% 50%
-}
-
-body#pageContatti article>section #gwrap #gmap {
-	width: 100%;
-	height: 300px;
-	display: block;
-	background: #fafafa
-}
-
-body#pageContatti article>section #gwrap+a {
-	font-size: 12px;
-	color: #999
 }
 
 body#pageGallery article>section>figure {
@@ -1110,42 +1084,31 @@ body#pageGallery article>section>figure>img {
 	body>header>div>a {
 		top: 25px;
 		left: 15px;
-		width: 290px;
+		width: 188px;
 		height: 65px;
 		background-image: url(../img/modified/logobs.png);
 		/*background-image: url(../img/logo_orizzontale@2.png);*/
-		-webkit-background-size: 290px 65px;
-		-moz-background-size: 290px 65px;
-		background-size: 290px 65px
+		-webkit-background-size: 188px 65px;
+		-moz-background-size: 188px 65px;
+		background-size: 188px 65px
 	}
 
 	/*language menu bianco nella home e prezzi su mobile perch� sfondo � nero -- begin*/
 	body#pageHomepage>header>div nav#lang2 ul li>a {
 		color: rgba(250, 250, 250, 0.9);
 	}
-	body.it#pageHomepage>header>div nav#lang2 ul li.it2 a span,
-	body.en#pageHomepage>header>div nav#lang2 ul li.en2 a span,
-	body.de#pageHomepage>header>div nav#lang2 ul li.de2 a span,
-	body.fr#pageHomepage>header>div nav#lang2 ul li.fr2 a span,
-	body.es#pageHomepage>header>div nav#lang2 ul li.es2 a span
-	{
+	body.it#pageHomepage>header>div nav#lang2 ul li.it2 a span,body.en#pageHomepage>header>div nav#lang2 ul li.en2 a span,body.de#pageHomepage>header>div nav#lang2 ul li.de2 a span,body.fr#pageHomepage>header>div nav#lang2 ul li.fr2 a span,body.es#pageHomepage>header>div nav#lang2 ul li.es2 a span
+		{
 		border-bottom-color: rgba(250, 250, 250, 0.9);
 	}
 	body#pagePrezzi>header>div nav#lang2 ul li>a {
 		color: rgba(250, 250, 250, 0.9);
 	}
-	body.it#pagePrezzi>header>div nav#lang2 ul li.it2 a span,
-	body.en#pagePrezzi>header>div nav#lang2 ul li.en2 a span,
-	body.de#pagePrezzi>header>div nav#lang2 ul li.de2 a span,
-	body.fr#pagePrezzi>header>div nav#lang2 ul li.fr2 a span,
-	body.es#pagePrezzi>header>div nav#lang2 ul li.es2 a span
-	{
+	body.it#pagePrezzi>header>div nav#lang2 ul li.it2 a span,body.en#pagePrezzi>header>div nav#lang2 ul li.en2 a span,body.de#pagePrezzi>header>div nav#lang2 ul li.de2 a span,body.fr#pagePrezzi>header>div nav#lang2 ul li.fr2 a span,body.es#pagePrezzi>header>div nav#lang2 ul li.es2 a span
+		{
 		border-bottom-color: rgba(250, 250, 250, 0.9);
 	}
 	/*language menu bianco nella home e prezzi su mobile perch� sfondo � nero -- ends*/
-	
-	
-
 	body#pageHomepage>header>div>a {
 		background-image: url(../img/modified/logows.png);
 	}
@@ -1427,13 +1390,13 @@ body#pageGallery article>section>figure>img {
 		padding: 15px 10px;
 		font-size: 20px
 	}
-	body#pageContatti article>section aside {
+	body#pageDovesiamo article>section aside {
 		margin: 0 auto 10px;
 		float: none;
 		width: 96%;
 		padding: 2%
 	}
-	body#pageContatti article>section aside img {
+	body#pageDovesiamo article>section aside img {
 		width: 100%
 	}
 	body#pageContatti article>section ul li span {
@@ -1476,10 +1439,10 @@ body#pageGallery article>section>figure>img {
 	body#pageContatti article>section ul li:first-child strong a {
 		font-size: 16px
 	}
-	body#pageContatti article>section #gwrap {
+	body#pageDovesiamo article>section #gwrap {
 		display: none
 	}
-	body#pageContatti article>section #gwrap+a {
+	body#pageDovesiamo article>section #gwrap+a {
 		display: block;
 		margin: 20px auto 10px;
 		padding-top: 20px;
@@ -1487,60 +1450,6 @@ body#pageGallery article>section>figure>img {
 		font-weight: bold;
 		color: #000;
 		border-top: 1px dotted #e4e4e4
-	}
-	body#pageCredits article>section {
-		height: auto;
-		text-align: center
-	}
-	body#pageCredits article>section>hgroup {
-		text-align: left
-	}
-	body#pageCredits article>section>img {
-		position: relative;
-		top: auto;
-		left: auto;
-		max-width: 100%;
-		height: auto
-	}
-	body#pageCredits article>section>ul {
-		position: relative;
-		top: auto;
-		right: auto;
-		width: 195px;
-		margin: 20px auto 0
-	}
-	body#pageCredits article>section>ul li {
-		position: relative;
-		width: 195px;
-		height: auto;
-		margin-bottom: 30px;
-		padding-left: 0;
-		text-align: center
-	}
-	body#pageCredits article>section>ul li>span {
-		position: relative;
-		top: auto;
-		left: auto;
-		display: block;
-		background-image: url(../img/credits/credits_labels@2.png);
-		background-size: 195px 390px
-	}
-	body#pageCredits article>section>ul li>p,body#pageCredits article>section>ul li>a img
-		{
-		position: relative;
-		left: auto;
-		margin-top: 10px
-	}
-	body#pageCredits article>section>ul li#boxAW>a img,body#pageCredits article>section>ul li#boxCD>a img,body#pageCredits article>section>ul li#boxGHS>a img
-		{
-		top: auto
-	}
-	body#pageCredits article>section>ul li#boxBV {
-		margin-top: 0
-	}
-	body#pageCredits article>section>ul li#boxBV>p {
-		top: auto;
-		font-size: 15px
 	}
 }
 
@@ -1686,7 +1595,7 @@ body#pageGallery article>section>figure>img {
 	body#pageCamere article>section aside>ul li {
 		margin-left: 15px
 	}
-	body#pageContatti article>section #gwrap {
+	body#pageDovesiamo article>section #gwrap {
 		width: 890px
 	}
 }
@@ -1795,22 +1704,19 @@ body#pageGallery article>section>figure>img {
 	body#pagePrezzi article>section table {
 		width: 90%
 	}
-	body#pageContatti article>section aside {
+	body#pageDovesiamo article>section aside {
 		width: 300px;
 		height: 275px;
 		margin-left: 20px
 	}
-	body#pageContatti article>section aside>img {
+	body#pageDovesiamo article>section aside>img {
 		position: absolute;
 		top: 5px;
 		left: -65px;
 		clip: rect(0px, 370px, 275px, 70px)
 	}
-	body#pageContatti article>section #gwrap {
+	body#pageDovesiamo article>section #gwrap {
 		width: 690px
-	}
-	body#pageCredits article>section>img {
-		width: 36%
 	}
 }
 /*iphone5 protrait */
